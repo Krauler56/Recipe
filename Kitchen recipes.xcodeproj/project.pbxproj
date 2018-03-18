@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28337000205E5299003664C0 /* snackImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28336FFF205E5299003664C0 /* snackImage.jpg */; };
+		28337002205E5585003664C0 /* FoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28337001205E5585003664C0 /* FoodCell.swift */; };
+		28337004205E5595003664C0 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28337003205E5595003664C0 /* Food.swift */; };
+		28337006205E5DA4003664C0 /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28337005205E5DA4003664C0 /* FoodViewController.swift */; };
 		2862222A205D190300A9C2B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28622229205D190300A9C2B0 /* AppDelegate.swift */; };
 		2862222C205D190300A9C2B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2862222B205D190300A9C2B0 /* ViewController.swift */; };
 		2862222F205D190300A9C2B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2862222D205D190300A9C2B0 /* Main.storyboard */; };
@@ -14,6 +18,12 @@
 		28622234205D190300A9C2B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28622232205D190300A9C2B0 /* LaunchScreen.storyboard */; };
 		2862223F205D190300A9C2B0 /* Kitchen_recipesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2862223E205D190300A9C2B0 /* Kitchen_recipesTests.swift */; };
 		2862224A205D190400A9C2B0 /* Kitchen_recipesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28622249205D190400A9C2B0 /* Kitchen_recipesUITests.swift */; };
+		28D5B503205DAFC700DE7BF7 /* FoodType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D5B502205DAFC700DE7BF7 /* FoodType.swift */; };
+		28D5B505205DB16700DE7BF7 /* mainFoodImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28D5B504205DB16700DE7BF7 /* mainFoodImage.jpg */; };
+		28D5B507205DB21700DE7BF7 /* FoodTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D5B506205DB21700DE7BF7 /* FoodTypeCell.swift */; };
+		28D5B509205DC12000DE7BF7 /* soupeImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28D5B508205DC12000DE7BF7 /* soupeImage.jpg */; };
+		28D5B50B205DC18200DE7BF7 /* salatImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28D5B50A205DC18200DE7BF7 /* salatImage.jpg */; };
+		28D5B50D205DC1BC00DE7BF7 /* desertImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28D5B50C205DC1BC00DE7BF7 /* desertImage.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +44,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		28336FFF205E5299003664C0 /* snackImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = snackImage.jpg; path = ../../../../../Downloads/snackImage.jpg; sourceTree = "<group>"; };
+		28337001205E5585003664C0 /* FoodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCell.swift; sourceTree = "<group>"; };
+		28337003205E5595003664C0 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		28337005205E5DA4003664C0 /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
 		28622226205D190300A9C2B0 /* Kitchen recipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kitchen recipes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		28622229205D190300A9C2B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2862222B205D190300A9C2B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +61,12 @@
 		28622245205D190300A9C2B0 /* Kitchen recipesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kitchen recipesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		28622249205D190400A9C2B0 /* Kitchen_recipesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kitchen_recipesUITests.swift; sourceTree = "<group>"; };
 		2862224B205D190400A9C2B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28D5B502205DAFC700DE7BF7 /* FoodType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodType.swift; sourceTree = "<group>"; };
+		28D5B504205DB16700DE7BF7 /* mainFoodImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = mainFoodImage.jpg; path = ../../../../../Downloads/mainFoodImage.jpg; sourceTree = "<group>"; };
+		28D5B506205DB21700DE7BF7 /* FoodTypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTypeCell.swift; sourceTree = "<group>"; };
+		28D5B508205DC12000DE7BF7 /* soupeImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = soupeImage.jpg; path = ../../../../../Downloads/soupeImage.jpg; sourceTree = "<group>"; };
+		28D5B50A205DC18200DE7BF7 /* salatImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = salatImage.jpg; path = ../../../../../Downloads/salatImage.jpg; sourceTree = "<group>"; };
+		28D5B50C205DC1BC00DE7BF7 /* desertImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = desertImage.jpg; path = ../../../../../Downloads/desertImage.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +117,11 @@
 		28622228205D190300A9C2B0 /* Kitchen recipes */ = {
 			isa = PBXGroup;
 			children = (
+				28D5B501205DAFA600DE7BF7 /* Cell */,
+				28D5B500205DAF0000DE7BF7 /* Images */,
+				28622259205D993000A9C2B0 /* Classes */,
+				28622258205D990B00A9C2B0 /* Views */,
 				28622229205D190300A9C2B0 /* AppDelegate.swift */,
-				2862222B205D190300A9C2B0 /* ViewController.swift */,
 				2862222D205D190300A9C2B0 /* Main.storyboard */,
 				28622230205D190300A9C2B0 /* Assets.xcassets */,
 				28622232205D190300A9C2B0 /* LaunchScreen.storyboard */,
@@ -123,6 +146,45 @@
 				2862224B205D190400A9C2B0 /* Info.plist */,
 			);
 			path = "Kitchen recipesUITests";
+			sourceTree = "<group>";
+		};
+		28622258205D990B00A9C2B0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2862222B205D190300A9C2B0 /* ViewController.swift */,
+				28337005205E5DA4003664C0 /* FoodViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		28622259205D993000A9C2B0 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				28D5B502205DAFC700DE7BF7 /* FoodType.swift */,
+				28337003205E5595003664C0 /* Food.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		28D5B500205DAF0000DE7BF7 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				28D5B504205DB16700DE7BF7 /* mainFoodImage.jpg */,
+				28D5B508205DC12000DE7BF7 /* soupeImage.jpg */,
+				28D5B50A205DC18200DE7BF7 /* salatImage.jpg */,
+				28D5B50C205DC1BC00DE7BF7 /* desertImage.jpg */,
+				28336FFF205E5299003664C0 /* snackImage.jpg */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		28D5B501205DAFA600DE7BF7 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				28D5B506205DB21700DE7BF7 /* FoodTypeCell.swift */,
+				28337001205E5585003664C0 /* FoodCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,9 +294,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28337000205E5299003664C0 /* snackImage.jpg in Resources */,
 				28622234205D190300A9C2B0 /* LaunchScreen.storyboard in Resources */,
 				28622231205D190300A9C2B0 /* Assets.xcassets in Resources */,
 				2862222F205D190300A9C2B0 /* Main.storyboard in Resources */,
+				28D5B505205DB16700DE7BF7 /* mainFoodImage.jpg in Resources */,
+				28D5B509205DC12000DE7BF7 /* soupeImage.jpg in Resources */,
+				28D5B50B205DC18200DE7BF7 /* salatImage.jpg in Resources */,
+				28D5B50D205DC1BC00DE7BF7 /* desertImage.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +327,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2862222C205D190300A9C2B0 /* ViewController.swift in Sources */,
+				28337006205E5DA4003664C0 /* FoodViewController.swift in Sources */,
+				28D5B503205DAFC700DE7BF7 /* FoodType.swift in Sources */,
+				28337002205E5585003664C0 /* FoodCell.swift in Sources */,
 				2862222A205D190300A9C2B0 /* AppDelegate.swift in Sources */,
+				28D5B507205DB21700DE7BF7 /* FoodTypeCell.swift in Sources */,
+				28337004205E5595003664C0 /* Food.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +499,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X7BKMVT4A2;
 				INFOPLIST_FILE = "Kitchen recipes/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "student.Kitchen-recipes";
@@ -441,6 +514,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X7BKMVT4A2;
 				INFOPLIST_FILE = "Kitchen recipes/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "student.Kitchen-recipes";
