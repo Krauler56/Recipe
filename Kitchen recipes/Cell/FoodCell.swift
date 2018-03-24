@@ -37,7 +37,7 @@ class FoodCell : UITableViewCell {
         mainImageView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
         mainImageView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
         mainImageView.bottomAnchor.constraint(equalTo: self.messageView.topAnchor).isActive = true
-        mainImageView.heightAnchor.constraint(equalToConstant: 200).isActive = true
+        mainImageView.heightAnchor.constraint(equalToConstant: 320).isActive = true
         
         messageView.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
         messageView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true

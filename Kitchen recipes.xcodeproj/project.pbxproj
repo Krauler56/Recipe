@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2819DFC0206685750055C635 /* FoodTypeInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2819DFBF206685750055C635 /* FoodTypeInit.swift */; };
+		2819DFC220668F430055C635 /* golabki.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2819DFC120668F430055C635 /* golabki.jpg */; };
+		2819DFC420668F8C0055C635 /* schabowy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2819DFC320668F8C0055C635 /* schabowy.jpg */; };
+		2819DFC620668FAD0055C635 /* bigos.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2819DFC520668FAD0055C635 /* bigos.jpg */; };
+		2819DFC82066922C0055C635 /* barszcz_czerwony.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2819DFC72066922C0055C635 /* barszcz_czerwony.jpg */; };
+		2819DFCA2066924A0055C635 /* zurek_z_jajkiem.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2819DFC92066924A0055C635 /* zurek_z_jajkiem.jpg */; };
+		2819DFCC2066927C0055C635 /* rosol.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2819DFCB2066927C0055C635 /* rosol.jpg */; };
 		28337000205E5299003664C0 /* snackImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28336FFF205E5299003664C0 /* snackImage.jpg */; };
 		28337002205E5585003664C0 /* FoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28337001205E5585003664C0 /* FoodCell.swift */; };
 		28337004205E5595003664C0 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28337003205E5595003664C0 /* Food.swift */; };
@@ -44,6 +51,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2819DFBF206685750055C635 /* FoodTypeInit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTypeInit.swift; sourceTree = "<group>"; };
+		2819DFC120668F430055C635 /* golabki.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = golabki.jpg; path = ../../../../../Downloads/golabki.jpg; sourceTree = "<group>"; };
+		2819DFC320668F8C0055C635 /* schabowy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = schabowy.jpg; path = ../../../../../Downloads/schabowy.jpg; sourceTree = "<group>"; };
+		2819DFC520668FAD0055C635 /* bigos.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bigos.jpg; path = ../../../../../Downloads/bigos.jpg; sourceTree = "<group>"; };
+		2819DFC72066922C0055C635 /* barszcz_czerwony.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = barszcz_czerwony.jpg; path = ../../../../../Downloads/barszcz_czerwony.jpg; sourceTree = "<group>"; };
+		2819DFC92066924A0055C635 /* zurek_z_jajkiem.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = zurek_z_jajkiem.jpg; path = ../../../../../Downloads/zurek_z_jajkiem.jpg; sourceTree = "<group>"; };
+		2819DFCB2066927C0055C635 /* rosol.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = rosol.jpg; path = ../../../../../Downloads/rosol.jpg; sourceTree = "<group>"; };
 		28336FFF205E5299003664C0 /* snackImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = snackImage.jpg; path = ../../../../../Downloads/snackImage.jpg; sourceTree = "<group>"; };
 		28337001205E5585003664C0 /* FoodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCell.swift; sourceTree = "<group>"; };
 		28337003205E5595003664C0 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
@@ -162,6 +176,7 @@
 			children = (
 				28D5B502205DAFC700DE7BF7 /* FoodType.swift */,
 				28337003205E5595003664C0 /* Food.swift */,
+				2819DFBF206685750055C635 /* FoodTypeInit.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -174,6 +189,12 @@
 				28D5B50A205DC18200DE7BF7 /* salatImage.jpg */,
 				28D5B50C205DC1BC00DE7BF7 /* desertImage.jpg */,
 				28336FFF205E5299003664C0 /* snackImage.jpg */,
+				2819DFC120668F430055C635 /* golabki.jpg */,
+				2819DFC320668F8C0055C635 /* schabowy.jpg */,
+				2819DFC520668FAD0055C635 /* bigos.jpg */,
+				2819DFC72066922C0055C635 /* barszcz_czerwony.jpg */,
+				2819DFC92066924A0055C635 /* zurek_z_jajkiem.jpg */,
+				2819DFCB2066927C0055C635 /* rosol.jpg */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -296,12 +317,18 @@
 			files = (
 				28337000205E5299003664C0 /* snackImage.jpg in Resources */,
 				28622234205D190300A9C2B0 /* LaunchScreen.storyboard in Resources */,
+				2819DFCC2066927C0055C635 /* rosol.jpg in Resources */,
+				2819DFC620668FAD0055C635 /* bigos.jpg in Resources */,
 				28622231205D190300A9C2B0 /* Assets.xcassets in Resources */,
+				2819DFC420668F8C0055C635 /* schabowy.jpg in Resources */,
 				2862222F205D190300A9C2B0 /* Main.storyboard in Resources */,
 				28D5B505205DB16700DE7BF7 /* mainFoodImage.jpg in Resources */,
 				28D5B509205DC12000DE7BF7 /* soupeImage.jpg in Resources */,
 				28D5B50B205DC18200DE7BF7 /* salatImage.jpg in Resources */,
 				28D5B50D205DC1BC00DE7BF7 /* desertImage.jpg in Resources */,
+				2819DFCA2066924A0055C635 /* zurek_z_jajkiem.jpg in Resources */,
+				2819DFC82066922C0055C635 /* barszcz_czerwony.jpg in Resources */,
+				2819DFC220668F430055C635 /* golabki.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +356,7 @@
 				2862222C205D190300A9C2B0 /* ViewController.swift in Sources */,
 				28337006205E5DA4003664C0 /* FoodViewController.swift in Sources */,
 				28D5B503205DAFC700DE7BF7 /* FoodType.swift in Sources */,
+				2819DFC0206685750055C635 /* FoodTypeInit.swift in Sources */,
 				28337002205E5585003664C0 /* FoodCell.swift in Sources */,
 				2862222A205D190300A9C2B0 /* AppDelegate.swift in Sources */,
 				28D5B507205DB21700DE7BF7 /* FoodTypeCell.swift in Sources */,

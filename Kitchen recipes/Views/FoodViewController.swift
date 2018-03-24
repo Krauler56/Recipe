@@ -10,17 +10,20 @@ import Foundation
 
 import UIKit
 
-class FoodViewController: UITableViewController{
+class FoodViewController: UITableViewController {
     
-    var data = [FoodType]()
+    var data = [Food]()
+    var foodType: FoodKind!
+    
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         
-        data =  [FoodType.init(image:#imageLiteral(resourceName: "mainFoodImage"),message: "Главные блюда")]
-        
+        data = foodInit.filter({ $0.foodType == foodType })
         self.tableView.register(FoodCell.self, forCellReuseIdentifier: "custom")
         self.tableView.rowHeight = UITableViewAutomaticDimension
-        self.tableView.estimatedRowHeight = 200
+        self.tableView.estimatedRowHeight = 150
     }
     
     override func didReceiveMemoryWarning() {
@@ -28,7 +31,7 @@ class FoodViewController: UITableViewController{
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = self.tableView.dequeueReusableCell(withIdentifier: "custom") as! FoodTypeCell
+        let cell = self.tableView.dequeueReusableCell(withIdentifier: "custom") as! FoodCell
         cell.mainImage = data[indexPath.row].image
         cell.message = data[indexPath.row].message
         cell.layoutSubviews()

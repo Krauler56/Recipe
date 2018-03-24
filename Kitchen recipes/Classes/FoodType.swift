@@ -22,5 +22,6 @@ enum FoodKind{
 struct FoodType {
     let image : UIImage?
     let message : String?
+    let kind : FoodKind?
     
 }
