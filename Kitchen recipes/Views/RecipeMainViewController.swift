@@ -26,9 +26,10 @@ var data = Recipe()
    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
        let cell = Bundle.main.loadNibNamed("RecipeMainCell", owner: self, options: nil)?.first as! RecipeMainCell
         cell.recipeImage.image = #imageLiteral(resourceName: "golabki.jpg")
-  //  let cell = Bundle.main.loadNibNamed("RecipeComponentCell", owner: self, options: nil)?.first as! RecipeComponentCell
-  //  cell.nameOfProduct.text = data.products![indexPath.row].0.message!
-   // cell.countOfProduct.text = String(data.products![indexPath.row].1)+" "+data.products![indexPath.row].0.measure!
+        cell.rating.rating = data.rating!
+        cell.countOfRatingPersonLabel.text = "\(data.numberOfRating ?? 0)"
+        cell.countOfPortion.text = "\(data.numberOfPortions ?? 0)"
+ 
         return cell
    }
     
@@ -42,7 +43,7 @@ var data = Recipe()
         //  return 70.0
         
         //}
-        return 350
+        return self.view.window!.frame.size.height-49-33-30 //height of iPhone screen
     }
     
   

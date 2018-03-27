@@ -19,23 +19,65 @@
                 <rect key="frame" x="0.0" y="0.0" width="470" height="349.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tKV-sM-PVq">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tKV-sM-PVq">
                         <rect key="frame" x="0.0" y="0.0" width="470" height="320"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     </imageView>
-                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="50u-LY-Ver" customClass="CosmosView" customModule="Cosmos">
-                        <rect key="frame" x="9" y="324" width="230" height="25"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V8O-fz-Lqp">
+                        <rect key="frame" x="0.0" y="316" width="470" height="33"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="50u-LY-Ver" customClass="CosmosView" customModule="Cosmos">
+                                <rect key="frame" x="8" y="7" width="127" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon-person" translatesAutoresizingMaskIntoConstraints="NO" id="Llo-Co-Pum">
+                                <rect key="frame" x="130" y="7" width="25" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="N" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O9T-rk-ZjF">
+                                <rect key="frame" x="157" y="5" width="20" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon-dishes2" translatesAutoresizingMaskIntoConstraints="NO" id="5Ma-wQ-OnY">
+                                <rect key="frame" x="185" y="5" width="20" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="N" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6iD-ii-M33">
+                                <rect key="frame" x="213" y="6" width="127" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Hfw-KN-aOl"/>
                     </view>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="V8O-fz-Lqp" firstAttribute="bottom" secondItem="tKV-sM-PVq" secondAttribute="bottom" id="oob-Jz-REJ"/>
+                </constraints>
             </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="tKV-sM-PVq" firstAttribute="top" secondItem="njF-e1-oar" secondAttribute="top" id="hvm-70-xlE"/>
+                <constraint firstItem="njF-e1-oar" firstAttribute="bottom" secondItem="tKV-sM-PVq" secondAttribute="bottom" constant="30" id="uRN-yY-o51"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="countOfPortion" destination="6iD-ii-M33" id="q4N-4J-5RZ"/>
+                <outlet property="countOfRatingPersonLabel" destination="O9T-rk-ZjF" id="y80-JD-9ni"/>
                 <outlet property="rating" destination="50u-LY-Ver" id="dmT-HL-Hdb"/>
                 <outlet property="recipeImage" destination="tKV-sM-PVq" id="YxT-7T-Rm7"/>
             </connections>
-            <point key="canvasLocation" x="100" y="210.5"/>
+            <point key="canvasLocation" x="100" y="210"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="icon-dishes2" width="100" height="100"/>
+        <image name="icon-person" width="100" height="100"/>
+    </resources>
 </document>

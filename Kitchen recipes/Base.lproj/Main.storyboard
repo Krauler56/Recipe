@@ -124,7 +124,9 @@
                             <outlet property="delegate" destination="GAn-I3-jnX" id="Q2a-XN-olC"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Skladniki" image="icon-component" id="2Ye-Tw-QHK"/>
+                    <tabBarItem key="tabBarItem" title="Skladniki" image="icon-component" id="2Ye-Tw-QHK">
+                        <inset key="largeContentSizeImageInsets" minX="0.0" minY="1" maxX="0.0" maxY="0.0"/>
+                    </tabBarItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nN7-rR-prI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
