@@ -12,7 +12,8 @@ import UIKit
 struct Food {
     let image : UIImage?
     let message : String?
-    let rank : Int?
+    let rank : Double?
     let foodType : FoodKind?
-    //let review : [(String,Int)]?
+    //let review : String?
+    
 }

@@ -57,6 +57,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="DhQ-QE-mLJ" kind="show" identifier="toFoodMainViewSeg" id="gbu-Zz-gzr"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -67,7 +70,83 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mnJ-ux-7XO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3260" y="197"/>
+            <point key="canvasLocation" x="3260" y="196.55172413793105"/>
+        </scene>
+        <!--Przepis-->
+        <scene sceneID="kwe-xu-OTr">
+            <objects>
+                <tableViewController id="9qq-fv-J2X" customClass="RecipeMainViewController" customModule="Kitchen_recipes" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="kzO-0K-8c4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="1Cx-na-paq">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1Cx-na-paq" id="vFb-b8-DAU">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="9qq-fv-J2X" id="Cp3-Sk-veL"/>
+                            <outlet property="delegate" destination="9qq-fv-J2X" id="wT7-TJ-Vxz"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Przepis" image="icon-recipe" id="yJd-Ee-hu8"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zZP-cR-dnm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5695" y="-69"/>
+        </scene>
+        <!--Skladniki-->
+        <scene sceneID="0nO-iy-3He">
+            <objects>
+                <tableViewController id="GAn-I3-jnX" customClass="FoodMainViewController" customModule="Kitchen_recipes" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="GMi-kH-ehL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="hOi-h2-k6g">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hOi-h2-k6g" id="1on-Y0-Y9T">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="GAn-I3-jnX" id="ydS-SU-dHW"/>
+                            <outlet property="delegate" destination="GAn-I3-jnX" id="Q2a-XN-olC"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Skladniki" image="icon-component" id="2Ye-Tw-QHK"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nN7-rR-prI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5694" y="716"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="cIr-Vu-Vu0">
+            <objects>
+                <tabBarController id="DhQ-QE-mLJ" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lgm-iY-ugg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9qq-fv-J2X" kind="relationship" relationship="viewControllers" id="w9H-oA-uOU"/>
+                        <segue destination="GAn-I3-jnX" kind="relationship" relationship="viewControllers" id="F90-AO-vwd"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eKJ-s2-KM2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4050" y="197"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="aIA-Uh-H1T">
@@ -86,4 +165,8 @@
             <point key="canvasLocation" x="1310" y="197"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icon-component" width="25" height="25"/>
+        <image name="icon-recipe" width="25" height="25"/>
+    </resources>
 </document>

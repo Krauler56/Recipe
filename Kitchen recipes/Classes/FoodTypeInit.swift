@@ -16,10 +16,12 @@ var foodTypeInit =  [FoodType.init(image:#imageLiteral(resourceName: "mainFoodIm
     ,FoodType.init(image:#imageLiteral(resourceName: "desertImage.jpg"),message: "Desery", kind: FoodKind.desert)
     ,FoodType.init(image:#imageLiteral(resourceName: "snackImage.jpg"),message: "Przekąski", kind: FoodKind.snack)]
 
-var foodInit:[Food] =  [Food.init(image:#imageLiteral(resourceName: "golabki.jpg"),message: "Golabki", rank: 3, foodType: FoodKind.mainFood),
-                 Food.init(image:#imageLiteral(resourceName: "schabowy.jpg"),message: "Kotlet schabowy", rank: 3, foodType: FoodKind.mainFood),
-                 Food.init(image:#imageLiteral(resourceName: "bigos"),message: "Bigos", rank: 3, foodType: FoodKind.mainFood),
-                 Food.init(image:#imageLiteral(resourceName: "barszcz_czerwony"),message: "Barszcz czerwony", rank: 3, foodType: FoodKind.soupe),
-                 Food.init(image:#imageLiteral(resourceName: "zurek_z_jajkiem.jpg"),message: "Żurek z jajkiem", rank: 3, foodType: FoodKind.soupe),
-                 Food.init(image:#imageLiteral(resourceName: "rosol.jpg"),message: "Rosól", rank: 3, foodType: FoodKind.soupe)]
+var foodInit:[Food] =  [Food.init(image:#imageLiteral(resourceName: "golabki.jpg"),message: "Golabki", rank: 2, foodType: FoodKind.mainFood),
+                 Food.init(image:#imageLiteral(resourceName: "schabowy.jpg"),message: "Kotlet schabowy", rank: 5, foodType: FoodKind.mainFood),
+                 Food.init(image:#imageLiteral(resourceName: "bigos"),message: "Bigos", rank: 4, foodType: FoodKind.mainFood),
+                 Food.init(image:#imageLiteral(resourceName: "barszcz_czerwony"),message: "Barszcz czerwony", rank: 2, foodType: FoodKind.soupe),
+                 Food.init(image:#imageLiteral(resourceName: "zurek_z_jajkiem.jpg"),message: "Żurek z jajkiem", rank: 5, foodType: FoodKind.soupe),
+                 Food.init(image:#imageLiteral(resourceName: "rosol.jpg"),message: "Rosól", rank: 1, foodType: FoodKind.soupe)]
+
+
 

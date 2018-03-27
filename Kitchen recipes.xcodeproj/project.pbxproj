@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2805847A2066B15E00BBEF10 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 280584792066B15E00BBEF10 /* Podfile */; };
 		2819DFC0206685750055C635 /* FoodTypeInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2819DFBF206685750055C635 /* FoodTypeInit.swift */; };
 		2819DFC220668F430055C635 /* golabki.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2819DFC120668F430055C635 /* golabki.jpg */; };
 		2819DFC420668F8C0055C635 /* schabowy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2819DFC320668F8C0055C635 /* schabowy.jpg */; };
@@ -25,12 +26,20 @@
 		28622234205D190300A9C2B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28622232205D190300A9C2B0 /* LaunchScreen.storyboard */; };
 		2862223F205D190300A9C2B0 /* Kitchen_recipesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2862223E205D190300A9C2B0 /* Kitchen_recipesTests.swift */; };
 		2862224A205D190400A9C2B0 /* Kitchen_recipesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28622249205D190400A9C2B0 /* Kitchen_recipesUITests.swift */; };
+		28A035842067C6260069BDB2 /* FoodMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A035832067C6260069BDB2 /* FoodMainViewController.swift */; };
+		28A035862067C9C60069BDB2 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A035852067C9C60069BDB2 /* Recipe.swift */; };
+		28A0358B20681E130069BDB2 /* RecipeComponentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A0358920681E130069BDB2 /* RecipeComponentCell.swift */; };
+		28A0358C20681E130069BDB2 /* RecipeComponentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28A0358A20681E130069BDB2 /* RecipeComponentCell.xib */; };
+		28A03592206828E60069BDB2 /* RecipeMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A03591206828E60069BDB2 /* RecipeMainViewController.swift */; };
+		28A03595206832150069BDB2 /* RecipeMainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A03593206832150069BDB2 /* RecipeMainCell.swift */; };
+		28A03596206832150069BDB2 /* RecipeMainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28A03594206832150069BDB2 /* RecipeMainCell.xib */; };
 		28D5B503205DAFC700DE7BF7 /* FoodType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D5B502205DAFC700DE7BF7 /* FoodType.swift */; };
 		28D5B505205DB16700DE7BF7 /* mainFoodImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28D5B504205DB16700DE7BF7 /* mainFoodImage.jpg */; };
 		28D5B507205DB21700DE7BF7 /* FoodTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D5B506205DB21700DE7BF7 /* FoodTypeCell.swift */; };
 		28D5B509205DC12000DE7BF7 /* soupeImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28D5B508205DC12000DE7BF7 /* soupeImage.jpg */; };
 		28D5B50B205DC18200DE7BF7 /* salatImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28D5B50A205DC18200DE7BF7 /* salatImage.jpg */; };
 		28D5B50D205DC1BC00DE7BF7 /* desertImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28D5B50C205DC1BC00DE7BF7 /* desertImage.jpg */; };
+		87508C952037BD66697C7166 /* Pods_Kitchen_recipes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED30C019FF272203320EA8BB /* Pods_Kitchen_recipes.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +60,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		062843B6EEA3950549D5E483 /* Pods-Kitchen recipes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kitchen recipes.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kitchen recipes/Pods-Kitchen recipes.release.xcconfig"; sourceTree = "<group>"; };
+		280584792066B15E00BBEF10 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		2819DFBF206685750055C635 /* FoodTypeInit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTypeInit.swift; sourceTree = "<group>"; };
 		2819DFC120668F430055C635 /* golabki.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = golabki.jpg; path = ../../../../../Downloads/golabki.jpg; sourceTree = "<group>"; };
 		2819DFC320668F8C0055C635 /* schabowy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = schabowy.jpg; path = ../../../../../Downloads/schabowy.jpg; sourceTree = "<group>"; };
@@ -75,12 +86,21 @@
 		28622245205D190300A9C2B0 /* Kitchen recipesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kitchen recipesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		28622249205D190400A9C2B0 /* Kitchen_recipesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kitchen_recipesUITests.swift; sourceTree = "<group>"; };
 		2862224B205D190400A9C2B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28A035832067C6260069BDB2 /* FoodMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodMainViewController.swift; sourceTree = "<group>"; };
+		28A035852067C9C60069BDB2 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		28A0358920681E130069BDB2 /* RecipeComponentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeComponentCell.swift; sourceTree = "<group>"; };
+		28A0358A20681E130069BDB2 /* RecipeComponentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipeComponentCell.xib; sourceTree = "<group>"; };
+		28A03591206828E60069BDB2 /* RecipeMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeMainViewController.swift; sourceTree = "<group>"; };
+		28A03593206832150069BDB2 /* RecipeMainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeMainCell.swift; sourceTree = "<group>"; };
+		28A03594206832150069BDB2 /* RecipeMainCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipeMainCell.xib; sourceTree = "<group>"; };
 		28D5B502205DAFC700DE7BF7 /* FoodType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodType.swift; sourceTree = "<group>"; };
 		28D5B504205DB16700DE7BF7 /* mainFoodImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = mainFoodImage.jpg; path = ../../../../../Downloads/mainFoodImage.jpg; sourceTree = "<group>"; };
 		28D5B506205DB21700DE7BF7 /* FoodTypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTypeCell.swift; sourceTree = "<group>"; };
 		28D5B508205DC12000DE7BF7 /* soupeImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = soupeImage.jpg; path = ../../../../../Downloads/soupeImage.jpg; sourceTree = "<group>"; };
 		28D5B50A205DC18200DE7BF7 /* salatImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = salatImage.jpg; path = ../../../../../Downloads/salatImage.jpg; sourceTree = "<group>"; };
 		28D5B50C205DC1BC00DE7BF7 /* desertImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = desertImage.jpg; path = ../../../../../Downloads/desertImage.jpg; sourceTree = "<group>"; };
+		AA21F2E30D6747B5AA879CC6 /* Pods-Kitchen recipes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kitchen recipes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kitchen recipes/Pods-Kitchen recipes.debug.xcconfig"; sourceTree = "<group>"; };
+		ED30C019FF272203320EA8BB /* Pods_Kitchen_recipes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kitchen_recipes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87508C952037BD66697C7166 /* Pods_Kitchen_recipes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,10 +132,13 @@
 		2862221D205D190300A9C2B0 = {
 			isa = PBXGroup;
 			children = (
+				280584792066B15E00BBEF10 /* Podfile */,
 				28622228205D190300A9C2B0 /* Kitchen recipes */,
 				2862223D205D190300A9C2B0 /* Kitchen recipesTests */,
 				28622248205D190400A9C2B0 /* Kitchen recipesUITests */,
 				28622227205D190300A9C2B0 /* Products */,
+				530FC3306B9D3EAD79C4D63A /* Pods */,
+				44BAA901F197AF99475D3BB9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -167,6 +191,8 @@
 			children = (
 				2862222B205D190300A9C2B0 /* ViewController.swift */,
 				28337005205E5DA4003664C0 /* FoodViewController.swift */,
+				28A035832067C6260069BDB2 /* FoodMainViewController.swift */,
+				28A03591206828E60069BDB2 /* RecipeMainViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -177,6 +203,7 @@
 				28D5B502205DAFC700DE7BF7 /* FoodType.swift */,
 				28337003205E5595003664C0 /* Food.swift */,
 				2819DFBF206685750055C635 /* FoodTypeInit.swift */,
+				28A035852067C9C60069BDB2 /* Recipe.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -204,8 +231,29 @@
 			children = (
 				28D5B506205DB21700DE7BF7 /* FoodTypeCell.swift */,
 				28337001205E5585003664C0 /* FoodCell.swift */,
+				28A0358920681E130069BDB2 /* RecipeComponentCell.swift */,
+				28A0358A20681E130069BDB2 /* RecipeComponentCell.xib */,
+				28A03593206832150069BDB2 /* RecipeMainCell.swift */,
+				28A03594206832150069BDB2 /* RecipeMainCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		44BAA901F197AF99475D3BB9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED30C019FF272203320EA8BB /* Pods_Kitchen_recipes.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		530FC3306B9D3EAD79C4D63A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AA21F2E30D6747B5AA879CC6 /* Pods-Kitchen recipes.debug.xcconfig */,
+				062843B6EEA3950549D5E483 /* Pods-Kitchen recipes.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,9 +263,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2862224E205D190400A9C2B0 /* Build configuration list for PBXNativeTarget "Kitchen recipes" */;
 			buildPhases = (
+				FDC9A34E45E0709EFBD32C5C /* [CP] Check Pods Manifest.lock */,
 				28622222205D190300A9C2B0 /* Sources */,
 				28622223205D190300A9C2B0 /* Frameworks */,
 				28622224205D190300A9C2B0 /* Resources */,
+				28110E2E27228175AC11D4F4 /* [CP] Embed Pods Frameworks */,
+				1659BB2F88F9202147BBD300 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -315,14 +366,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2805847A2066B15E00BBEF10 /* Podfile in Resources */,
 				28337000205E5299003664C0 /* snackImage.jpg in Resources */,
 				28622234205D190300A9C2B0 /* LaunchScreen.storyboard in Resources */,
+				28A0358C20681E130069BDB2 /* RecipeComponentCell.xib in Resources */,
 				2819DFCC2066927C0055C635 /* rosol.jpg in Resources */,
 				2819DFC620668FAD0055C635 /* bigos.jpg in Resources */,
 				28622231205D190300A9C2B0 /* Assets.xcassets in Resources */,
 				2819DFC420668F8C0055C635 /* schabowy.jpg in Resources */,
 				2862222F205D190300A9C2B0 /* Main.storyboard in Resources */,
 				28D5B505205DB16700DE7BF7 /* mainFoodImage.jpg in Resources */,
+				28A03596206832150069BDB2 /* RecipeMainCell.xib in Resources */,
 				28D5B509205DC12000DE7BF7 /* soupeImage.jpg in Resources */,
 				28D5B50B205DC18200DE7BF7 /* salatImage.jpg in Resources */,
 				28D5B50D205DC1BC00DE7BF7 /* desertImage.jpg in Resources */,
@@ -348,19 +402,78 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1659BB2F88F9202147BBD300 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Kitchen recipes/Pods-Kitchen recipes-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		28110E2E27228175AC11D4F4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Kitchen recipes/Pods-Kitchen recipes-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Kitchen recipes/Pods-Kitchen recipes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDC9A34E45E0709EFBD32C5C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Kitchen recipes-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		28622222205D190300A9C2B0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28A035842067C6260069BDB2 /* FoodMainViewController.swift in Sources */,
 				2862222C205D190300A9C2B0 /* ViewController.swift in Sources */,
 				28337006205E5DA4003664C0 /* FoodViewController.swift in Sources */,
+				28A0358B20681E130069BDB2 /* RecipeComponentCell.swift in Sources */,
 				28D5B503205DAFC700DE7BF7 /* FoodType.swift in Sources */,
 				2819DFC0206685750055C635 /* FoodTypeInit.swift in Sources */,
 				28337002205E5585003664C0 /* FoodCell.swift in Sources */,
+				28A03592206828E60069BDB2 /* RecipeMainViewController.swift in Sources */,
 				2862222A205D190300A9C2B0 /* AppDelegate.swift in Sources */,
 				28D5B507205DB21700DE7BF7 /* FoodTypeCell.swift in Sources */,
+				28A03595206832150069BDB2 /* RecipeMainCell.swift in Sources */,
 				28337004205E5595003664C0 /* Food.swift in Sources */,
+				28A035862067C9C60069BDB2 /* Recipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,6 +637,7 @@
 		};
 		2862224F205D190400A9C2B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA21F2E30D6747B5AA879CC6 /* Pods-Kitchen recipes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -539,6 +653,7 @@
 		};
 		28622250205D190400A9C2B0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 062843B6EEA3950549D5E483 /* Pods-Kitchen recipes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import Cosmos
 
 class FoodCell : UITableViewCell {
     var message : String?
@@ -21,6 +22,7 @@ class FoodCell : UITableViewCell {
         //  textView.font = .systemFont(ofSize: 20)
         return textView
     }()
+    
     var mainImageView : UIImageView = {
         var imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -28,10 +30,18 @@ class FoodCell : UITableViewCell {
         return imageView
     }()
     
+    var starsView: CosmosView = {
+        var starView = CosmosView()
+        starView.translatesAutoresizingMaskIntoConstraints = false
+        starView.isUserInteractionEnabled = false
+        return starView
+    }()
+    
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         self.addSubview(messageView)
         self.addSubview(mainImageView)
+        self.addSubview(starsView)
         
         mainImageView.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
         mainImageView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
@@ -42,13 +52,17 @@ class FoodCell : UITableViewCell {
         messageView.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
         messageView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
         messageView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
+        
+        starsView.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
+        starsView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
+        //starsView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
         // messageView.heightAnchor.constraint(equalToConstant: 40).isActive = true
     }
     
     override func layoutSubviews() {
         super.layoutSubviews()
         
-        if let message = message{
+        if let message = message {
             messageView.text = message
         }
         

@@ -19,7 +19,7 @@ class FoodViewController: UITableViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        
+        self.navigationItem.title = "TEST"
         data = foodInit.filter({ $0.foodType == foodType })
         self.tableView.register(FoodCell.self, forCellReuseIdentifier: "custom")
         self.tableView.rowHeight = UITableViewAutomaticDimension
@@ -34,6 +34,7 @@ class FoodViewController: UITableViewController {
         let cell = self.tableView.dequeueReusableCell(withIdentifier: "custom") as! FoodCell
         cell.mainImage = data[indexPath.row].image
         cell.message = data[indexPath.row].message
+        cell.starsView.rating = data[indexPath.row].rank!
         cell.layoutSubviews()
         return cell
     }
@@ -43,7 +44,7 @@ class FoodViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+       performSegue(withIdentifier: "toFoodMainViewSeg", sender: self)
     }
     
 
