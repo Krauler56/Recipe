@@ -25,7 +25,7 @@ var data = Recipe()
     
    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
        let cell = Bundle.main.loadNibNamed("RecipeMainCell", owner: self, options: nil)?.first as! RecipeMainCell
-        cell.recipeImage.image = #imageLiteral(resourceName: "golabki.jpg")
+        cell.recipeImage.image = UIImage.gif(name: "ezgif-4-ed2350780b")
         cell.rating.rating = data.rating!
         cell.countOfRatingPersonLabel.text = "\(data.numberOfRating ?? 0)"
         cell.countOfPortion.text = "\(data.numberOfPortions ?? 0)"
