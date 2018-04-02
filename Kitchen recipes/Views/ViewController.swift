@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Gifu
 
 class ViewController: UITableViewController {
     var selectedFoodType: Int!
@@ -53,4 +54,5 @@ class ViewController: UITableViewController {
         
     }
 }
+
 
