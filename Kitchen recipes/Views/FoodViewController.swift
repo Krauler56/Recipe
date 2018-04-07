@@ -12,7 +12,7 @@ import UIKit
 
 class FoodViewController: UITableViewController {
     
-    var data = [Food]()
+    var data = [Recipe]()
     var foodType: FoodKind!
     
     
@@ -20,7 +20,7 @@ class FoodViewController: UITableViewController {
         
         super.viewDidLoad()
         self.navigationItem.title = "TEST"
-        data = foodInit.filter({ $0.foodType == foodType })
+        data = recipes.filter({ $0.foodType == foodType})//foodInit.filter({ $0.foodType == foodType })
         self.tableView.register(FoodCell.self, forCellReuseIdentifier: "custom")
         self.tableView.rowHeight = UITableViewAutomaticDimension
         self.tableView.estimatedRowHeight = 150
@@ -34,7 +34,7 @@ class FoodViewController: UITableViewController {
         let cell = self.tableView.dequeueReusableCell(withIdentifier: "custom") as! FoodCell
         cell.mainImage = data[indexPath.row].image
         cell.message = data[indexPath.row].message
-        cell.starsView.rating = data[indexPath.row].rank!
+        cell.starsView.rating = data[indexPath.row].rating!
         cell.layoutSubviews()
         return cell
     }

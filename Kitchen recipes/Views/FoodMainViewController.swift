@@ -19,7 +19,7 @@ class FoodMainViewController: UITableViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        data = repice_golabki
+        data = recipes[0]
         /*self.navigationItem.title = "TEST"
         data = repice_golabki
         self.tableView.register(RecipeComponentCell.self, forCellReuseIdentifier: "custom")

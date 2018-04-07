@@ -18,6 +18,7 @@ struct Recipe {
     var numberOfPortions: Int?
     var steps: [Step]?
     var products: [(Product,Int)]?
+    var foodType: FoodKind?
 }
 
 struct Step {
@@ -42,7 +43,7 @@ var products: [Product] = [Product.init(message: "Kapusta",measure: "glowka"),
 //var products: [Product] = [Product.init(message: "Test", measure: "Test")]
 var imgView: UIImageView = UIImageView()
 
-var repice_golabki: Recipe = Recipe.init(image: UIImage.gif(name: "1"),message: "Golabki piekne",rating: 4,numberOfRating: 10,numberOfPortions: 3 ,steps:
+var recipes: [Recipe] = [Recipe.init(image: #imageLiteral(resourceName: "golabki.jpg"),message: "Golabki piekne",rating: 4,numberOfRating: 10,numberOfPortions: 3 ,steps:
     [(Step.init(image: "1",message: "Nacieramy marchew oraz kroimy cebulę",number: 1))
     ,(Step.init(image: "2",message: "Rozdrobniony łuk i marchew dodajemy do talerza z miełonym mięsem wieprzowym",number: 2))
     ,(Step.init(image: "3",message: "Oczyszczoną oraz umytą wcześniej kapustę kroimy do malutkich kawałeczków i dodajemy do talerza",number: 3))
@@ -55,7 +56,10 @@ var repice_golabki: Recipe = Recipe.init(image: UIImage.gif(name: "1"),message: 
     
     
     ],
-                                         products: [(products[0],1),(products[1],1000),(products[2],1),(products[3],2),(products[4],1),(products[5],200),(products[6],100)])
+                                         products: [(products[0],1),(products[1],1000),(products[2],1),(products[3],2),(products[4],1),(products[5],200),(products[6],100)],
+
+                                         foodType: FoodKind.mainFood)]
+
 
 
 

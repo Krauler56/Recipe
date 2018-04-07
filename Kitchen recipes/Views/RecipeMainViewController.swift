@@ -20,7 +20,7 @@ var data = Recipe()
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        data = repice_golabki
+        data = recipes[0]
     }
     
     override func didReceiveMemoryWarning() {
