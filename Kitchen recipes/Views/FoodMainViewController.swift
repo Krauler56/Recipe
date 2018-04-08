@@ -19,7 +19,7 @@ class FoodMainViewController: UITableViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        data = recipes[0]
+        data = RecipeHandler.actualCheckedRecipe!//recipes[0]
         /*self.navigationItem.title = "TEST"
         data = repice_golabki
         self.tableView.register(RecipeComponentCell.self, forCellReuseIdentifier: "custom")

@@ -7,7 +7,6 @@
 //
 
 import Foundation
-
 import UIKit
 
 class FoodViewController: UITableViewController {
@@ -24,6 +23,7 @@ class FoodViewController: UITableViewController {
         self.tableView.register(FoodCell.self, forCellReuseIdentifier: "custom")
         self.tableView.rowHeight = UITableViewAutomaticDimension
         self.tableView.estimatedRowHeight = 150
+         self.setSlideView()
     }
     
     override func didReceiveMemoryWarning() {
@@ -31,10 +31,10 @@ class FoodViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = self.tableView.dequeueReusableCell(withIdentifier: "custom") as! FoodCell
-        cell.mainImage = data[indexPath.row].image
-        cell.message = data[indexPath.row].message
-        cell.starsView.rating = data[indexPath.row].rating!
+        let cell = Bundle.main.loadNibNamed("FoodCell", owner: self, options: nil)?.first as! FoodCell
+        cell.mainImage.image = data[indexPath.row].image
+        cell.message.text = data[indexPath.row].message
+        cell.starView.rating = data[indexPath.row].rating!
         cell.layoutSubviews()
         return cell
     }
@@ -44,9 +44,12 @@ class FoodViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        RecipeHandler.actualCheckedRecipe = data[indexPath.row]
        performSegue(withIdentifier: "toFoodMainViewSeg", sender: self)
     }
     
-
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 350
+    }
     
 }

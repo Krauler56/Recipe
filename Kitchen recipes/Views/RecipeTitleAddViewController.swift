@@ -19,6 +19,7 @@ class RecipeTitleAddTableViewController: UITableViewController ,ChangePicturePro
         
     }
     
+   
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -39,8 +40,7 @@ class RecipeTitleAddTableViewController: UITableViewController ,ChangePicturePro
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        
-        return 500
+        return 600
     }
     
     func loadNewScreen(controller: UIViewController) {
@@ -55,6 +55,8 @@ class RecipeTitleAddTableViewController: UITableViewController ,ChangePicturePro
             
        // };
     }
+    
+    
    
 }
 

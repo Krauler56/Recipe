@@ -22,6 +22,7 @@
                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PfZ-06-Kgv">
                         <rect key="frame" x="0.0" y="397" width="375" height="59"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.83701380432531303" green="0.64754549875468626" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <state key="normal" title="Button"/>
                         <connections>
                             <action selector="addRecipeButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="byp-9G-w9W"/>

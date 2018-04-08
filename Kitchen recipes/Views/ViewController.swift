@@ -32,9 +32,10 @@ class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSou
         self.tableView.register(FoodTypeCell.self, forCellReuseIdentifier: "custom")
         self.tableView.rowHeight = UITableViewAutomaticDimension
         
+        self.setSlideView()
+        //self.hideKeyboard()
         
-        
-        menuVC = self.storyboard?.instantiateViewController(withIdentifier: "MenuVC") as! MenuViewController
+        /*menuVC = self.storyboard?.instantiateViewController(withIdentifier: "MenuVC") as! MenuViewController
         
         let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(self.handleSwipe))
         swipeRight.direction = .right
@@ -43,12 +44,12 @@ class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSou
         swipeLeft.direction = .left
         
         self.view.addGestureRecognizer(swipeRight)
-        self.view.addGestureRecognizer(swipeLeft)
+        self.view.addGestureRecognizer(swipeLeft)*/
       //  self.tableView.estimatedRowHeight = 200
         
     }
     
-    @objc func handleSwipe(gesture: UISwipeGestureRecognizer) {
+    /*@objc func handleSwipe(gesture: UISwipeGestureRecognizer) {
         switch gesture.direction {
         case UISwipeGestureRecognizerDirection.right:
             print("Right")
@@ -79,7 +80,7 @@ class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSou
             AppDelegate.isMenuVC = true
         }
     }
-    
+    */
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -107,10 +108,8 @@ class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSou
             destination.foodType = data[selectedFoodType].kind!
         }
        
-      
-        
     }
-    
+    /*
     @IBAction func menuBarButton_Item(_ sender: Any) {
         
         if AppDelegate.isMenuVC {
@@ -123,13 +122,9 @@ class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSou
         }
         
         print("WORK")
-    }
+    }*/
     
-    
-    
-    
-    
-    
+ 
 }
 
 

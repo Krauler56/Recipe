@@ -13,14 +13,14 @@ import SwiftyGif
 
 class RecipeMainViewController: UITableViewController {
     
-var data = Recipe()
+    var data = Recipe()
     
     var cellArray: [RecipeStepCell]?
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        data = recipes[0]
+        data = RecipeHandler.actualCheckedRecipe!//recipes[0]
     }
     
     override func didReceiveMemoryWarning() {
@@ -39,10 +39,14 @@ var data = Recipe()
     else  {
         let cell = Bundle.main.loadNibNamed("RecipeStepCell", owner: self, options: nil)?.first as! RecipeStepCell
         cell.numberOfStepLabel.text = String("\(data.steps![indexPath.row-1].number ?? 0)")
-        cell.stepImage.animate(withGIFNamed: data.steps![indexPath.row-1].image!)//data.steps![indexPath.row-1].image)//data.steps![indexPath.row-1].image
+        
+        if(data.steps![indexPath.row-1].image != nil) {
+        cell.stepImage.animate(withGIFNamed: data.steps![indexPath.row-1].image!)
+        }
         cell.stepTextView.text = data.steps![indexPath.row-1].message
         cell.stepImage.stopAnimatingGIF()
         cell.stepImage.image = cell.stepImage.activeFrame
+        
         cellArray?.append(cell)
         //cell.recipeImage.image = #imageLiteral(resourceName: "golabki.jpg")//UIImage.gif(name: "ezgif-4-ed2350780b")
         //cell.rating.rating = data.rating!

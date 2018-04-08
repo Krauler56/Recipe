@@ -25,7 +25,10 @@ class RecipeTitltleAddCell: UITableViewCell, UIPickerViewDataSource, UIPickerVie
         return  String(row+1)
     }
 
-    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int)
+    {
+        selectedValue = row+1 
+    }
     @IBOutlet var titleImage: UIImageView!
     
     
@@ -33,7 +36,7 @@ class RecipeTitltleAddCell: UITableViewCell, UIPickerViewDataSource, UIPickerVie
     
     
     @IBOutlet var numberOfPartitions: UIPickerView!
-    
+    var selectedValue: Int!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -46,6 +49,7 @@ class RecipeTitltleAddCell: UITableViewCell, UIPickerViewDataSource, UIPickerVie
         titleImage.isUserInteractionEnabled = true
         titleImage.addGestureRecognizer(tapGestureRecognizer)
         
+        selectedValue = 1
         // Initialization code
     }
    
@@ -62,11 +66,24 @@ class RecipeTitltleAddCell: UITableViewCell, UIPickerViewDataSource, UIPickerVie
         // Your action
     }
     
-
-    @IBAction func addRecipeButton(_ sender: Any) {
+    func checkInputData() -> Bool
+    {
+        return (inputNameOfRecipe.text?.isEmpty)! ? false : true
         
-        print("DZIALA")
     }
+    @IBAction func addRecipeButton(_ sender: Any) {
+       /* if (checkInputData()) {
+            var recipeToAppend = Recipe(image: titleImage.image,message: inputNameOfRecipe.text,rating: 4,numberOfRating: 0,numberOfPortions: selectedValue ,steps:[Step.init()]
+                ,products: [(products[0],1),(products[1],1000),(products[2],1),(products[3],2),(products[4],1),(products[5],200),(products[6],100)],foodType: FoodKind.mainFood)
+            recipes.append(recipeToAppend)
+        }*/
+        
+        if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "RecipeStepsAddViewController") as? RecipeStepsAddViewController
+        {
+            delegate?.loadNewScreen(controller: vc)
+        }
+    }
+   
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
