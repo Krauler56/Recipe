@@ -1,0 +1,32 @@
+PODS:
+  - Cosmos (15.0.0)
+  - Gifu (3.0.0)
+  - NVActivityIndicatorView (4.1.1):
+    - NVActivityIndicatorView/Presenter (= 4.1.1)
+  - NVActivityIndicatorView/Presenter (4.1.1)
+  - Regift (1.5.0)
+  - SwiftGifOrigin (1.6.1)
+  - SwiftyGif (4.1.0)
+  - YALSideMenu (2.0.1)
+
+DEPENDENCIES:
+  - Cosmos (~> 15.0)
+  - Gifu
+  - NVActivityIndicatorView
+  - Regift
+  - SwiftGifOrigin (~> 1.6.1)
+  - SwiftyGif
+  - YALSideMenu (~> 2.0)
+
+SPEC CHECKSUMS:
+  Cosmos: a6dbd3d0baa0cc8f51f8598f7508d5a09d0a9ade
+  Gifu: 6543ca2056a3d697097c09fe543ef49348ccc892
+  NVActivityIndicatorView: 60109b9bf46efc2e71ab81453196ccdfdfeea870
+  Regift: d097afd401021f4f42b102ee125ceeb125a38caf
+  SwiftGifOrigin: d6679d3ebe9df2e049a84bc52582635107b581f6
+  SwiftyGif: d36c6dfb52e2ca1e48fe349d225f50ec4123ec85
+  YALSideMenu: 4d6b90ea44dcdded18a99e46b676e4ad51d9c6bb
+
+PODFILE CHECKSUM: 765031790b5ec9fecff713140c1e9f895206a4c4
+
+COCOAPODS: 1.4.0
