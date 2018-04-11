@@ -10,10 +10,14 @@ import Foundation
 import UIKit
 import AVKit
 import AVFoundation
+import Regift
+import SwiftyGif
 
 class RecipeStepsAddViewController: UIViewController, UITableViewDelegate, UITableViewDataSource ,ChangePictureProtocol, recipeOpenVideoRecordProtocol  {
+   
     
     
+    weak var deleg: setAnimateInCell?
     
     @IBOutlet var recipeTableView: UITableView!
     
@@ -23,6 +27,7 @@ class RecipeStepsAddViewController: UIViewController, UITableViewDelegate, UITab
         
         recipeTableView.delegate = self
         recipeTableView.dataSource = self
+       
         
     }
     override func didReceiveMemoryWarning() {
@@ -65,4 +70,6 @@ class RecipeStepsAddViewController: UIViewController, UITableViewDelegate, UITab
         
         // };
     }
+    
+    
 }

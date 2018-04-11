@@ -20,16 +20,7 @@ class SlideMenuHandler {
 }
 
 class UrlVideoHandler {
-    static var delegate:setAnimateInCell?
     
     static var  urlOfVideo: URL!
     static var  regiftImege: Regift!
-    static func setGifToImage()
-    {
-        delegate?.loadGifToImageView()
-    }
-}
-
-protocol setAnimateInCell {
-    func loadGifToImageView() -> Void
 }

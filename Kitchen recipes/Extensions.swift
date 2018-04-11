@@ -81,13 +81,18 @@ extension RecipeStepsAddViewController: SNVideoRecorderDelegate {
     func videoRecorder(withVideo url: URL) {
         print(url)
         print("SADSADSASDASDASDASDASDASDASDSASDADSA")
-        UrlVideoHandler.urlOfVideo = url
+        /*UrlVideoHandler.urlOfVideo = url
         let frameCount = 24
         let delayTime  = Float(0.05)
         let loopCount  = 0
         UrlVideoHandler.regiftImege = Regift(sourceFileURL: UrlVideoHandler.urlOfVideo, frameCount: frameCount, delayTime: delayTime, loopCount: loopCount)
-        UrlVideoHandler.setGifToImage()
-        
+        //UrlVideoHandler.setGifToImage()
+        deleg?.loadGifToImageView()*/
+        let frameCount = 24
+        let delayTime  = Float(0.05)
+        let loopCount  = 0
+        let regiftImageURL: URL = Regift(sourceFileURL: url, frameCount: frameCount, delayTime: delayTime, loopCount: loopCount).createGif()!
+        deleg?.loadGifToImageView(with: regiftImageURL)
     }
     
     func videoRecorder(withImage image: UIImage) {

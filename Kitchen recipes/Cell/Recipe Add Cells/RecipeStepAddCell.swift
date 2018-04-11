@@ -12,10 +12,6 @@ import SwiftyGif
 
 class RecipeStepAddCell: UITableViewCell , setAnimateInCell {
  
-    
-    
-    
-
     weak var delegate: recipeOpenVideoRecordProtocol?
     @IBOutlet var recipeAddStepTextView: UITextView!
     @IBOutlet var recipeGif: UIImageView!
@@ -68,18 +64,24 @@ class RecipeStepAddCell: UITableViewCell , setAnimateInCell {
        delegate?.loadRecordScreen(controller: vc)
     }
     
-    func loadGifToImageView() {
-        //recipeGif.animate(UrlVideoHandler.regiftImege.createGif()
-        
-        print("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
-        recipeGif.animate(withGIFURL: UrlVideoHandler.regiftImege.createGif()!)
-        recipeGif.startAnimatingGif()
+    func loadGifToImageView(with: URL) {
+        print("AAAaaaaaAAAAAAAAAAASDSADSADADSSA")
+        if(UrlVideoHandler.regiftImege != nil) {
+            recipeGif.animate(withGIFURL: with)
+            recipeGif.startAnimatingGif()
+        }
     }
 }
 
 protocol recipeOpenVideoRecordProtocol  : NSObjectProtocol {
      func loadRecordScreen(controller: SNVideoRecorderViewController) -> Void
 }
+
+protocol setAnimateInCell : NSObjectProtocol {
+    func loadGifToImageView(with: URL) -> Void
+}
+
+
 
 
 
