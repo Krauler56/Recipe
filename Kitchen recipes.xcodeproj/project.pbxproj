@@ -9,13 +9,6 @@
 /* Begin PBXBuildFile section */
 		2805847A2066B15E00BBEF10 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 280584792066B15E00BBEF10 /* Podfile */; };
 		2819DFC0206685750055C635 /* FoodTypeInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2819DFBF206685750055C635 /* FoodTypeInit.swift */; };
-		2819DFC220668F430055C635 /* golabki.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2819DFC120668F430055C635 /* golabki.jpg */; };
-		2819DFC420668F8C0055C635 /* schabowy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2819DFC320668F8C0055C635 /* schabowy.jpg */; };
-		2819DFC620668FAD0055C635 /* bigos.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2819DFC520668FAD0055C635 /* bigos.jpg */; };
-		2819DFC82066922C0055C635 /* barszcz_czerwony.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2819DFC72066922C0055C635 /* barszcz_czerwony.jpg */; };
-		2819DFCA2066924A0055C635 /* zurek_z_jajkiem.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2819DFC92066924A0055C635 /* zurek_z_jajkiem.jpg */; };
-		2819DFCC2066927C0055C635 /* rosol.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2819DFCB2066927C0055C635 /* rosol.jpg */; };
-		28337000205E5299003664C0 /* snackImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28336FFF205E5299003664C0 /* snackImage.jpg */; };
 		28337004205E5595003664C0 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28337003205E5595003664C0 /* Food.swift */; };
 		28337006205E5DA4003664C0 /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28337005205E5DA4003664C0 /* FoodViewController.swift */; };
 		2862222A205D190300A9C2B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28622229205D190300A9C2B0 /* AppDelegate.swift */; };
@@ -28,14 +21,6 @@
 		2865C836206AD3A300BA7FEA /* ezgif-4-ed2350780b.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2865C835206AD3A300BA7FEA /* ezgif-4-ed2350780b.gif */; };
 		2865C839206BF96900BA7FEA /* EmptyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2865C837206BF96900BA7FEA /* EmptyCell.swift */; };
 		2865C83A206BF96900BA7FEA /* EmptyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2865C838206BF96900BA7FEA /* EmptyCell.xib */; };
-		2865C844206C0C7A00BA7FEA /* 7.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2865C83C206C0C7900BA7FEA /* 7.gif */; };
-		2865C845206C0C7A00BA7FEA /* 1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2865C83D206C0C7900BA7FEA /* 1.gif */; };
-		2865C846206C0C7A00BA7FEA /* 2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2865C83E206C0C7900BA7FEA /* 2.gif */; };
-		2865C847206C0C7A00BA7FEA /* 3.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2865C83F206C0C7900BA7FEA /* 3.gif */; };
-		2865C848206C0C7A00BA7FEA /* 5.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2865C840206C0C7900BA7FEA /* 5.gif */; };
-		2865C849206C0C7A00BA7FEA /* 6.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2865C841206C0C7900BA7FEA /* 6.gif */; };
-		2865C84A206C0C7A00BA7FEA /* 4.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2865C842206C0C7900BA7FEA /* 4.gif */; };
-		2865C84B206C0C7A00BA7FEA /* 8.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2865C843206C0C7A00BA7FEA /* 8.gif */; };
 		287DB49C207903D100DF566D /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287DB49B207903D100DF566D /* MenuViewController.swift */; };
 		287DB49F2079041B00DF566D /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287DB49D2079041B00DF566D /* MenuTableViewCell.swift */; };
 		287DB4A02079041B00DF566D /* MenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 287DB49E2079041B00DF566D /* MenuTableViewCell.xib */; };
@@ -52,6 +37,24 @@
 		287DB4B7207A2F4C00DF566D /* RecipeStepsAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287DB4B6207A2F4B00DF566D /* RecipeStepsAddViewController.swift */; };
 		287DB4BA207A30B000DF566D /* RecipeStepAddCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287DB4B8207A30B000DF566D /* RecipeStepAddCell.swift */; };
 		287DB4BB207A30B000DF566D /* RecipeStepAddCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 287DB4B9207A30B000DF566D /* RecipeStepAddCell.xib */; };
+		288304852081E6A7006CD09A /* soupeImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 288304842081E6A7006CD09A /* soupeImage.jpg */; };
+		288304872081E6F2006CD09A /* salatImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 288304862081E6F2006CD09A /* salatImage.jpg */; };
+		288304892081E7A0006CD09A /* desertImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 288304882081E7A0006CD09A /* desertImage.jpg */; };
+		2883048B2081E7A8006CD09A /* snackImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2883048A2081E7A8006CD09A /* snackImage.jpg */; };
+		2883048D2081E7DA006CD09A /* golabki.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2883048C2081E7DA006CD09A /* golabki.jpg */; };
+		2883048F2081E7E2006CD09A /* schabowy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2883048E2081E7E2006CD09A /* schabowy.jpg */; };
+		288304912081E7E9006CD09A /* bigos.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 288304902081E7E9006CD09A /* bigos.jpg */; };
+		288304932081E7F2006CD09A /* barszcz_czerwony.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 288304922081E7F2006CD09A /* barszcz_czerwony.jpg */; };
+		288304952081E7F8006CD09A /* zurek_z_jajkiem.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 288304942081E7F8006CD09A /* zurek_z_jajkiem.jpg */; };
+		288304972081E801006CD09A /* rosol.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 288304962081E801006CD09A /* rosol.jpg */; };
+		288304A02081E825006CD09A /* 1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 288304982081E825006CD09A /* 1.gif */; };
+		288304A12081E825006CD09A /* 5.gif in Resources */ = {isa = PBXBuildFile; fileRef = 288304992081E825006CD09A /* 5.gif */; };
+		288304A22081E825006CD09A /* 6.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2883049A2081E825006CD09A /* 6.gif */; };
+		288304A32081E825006CD09A /* 4.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2883049B2081E825006CD09A /* 4.gif */; };
+		288304A42081E825006CD09A /* 2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2883049C2081E825006CD09A /* 2.gif */; };
+		288304A52081E825006CD09A /* 7.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2883049D2081E825006CD09A /* 7.gif */; };
+		288304A62081E825006CD09A /* 3.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2883049E2081E825006CD09A /* 3.gif */; };
+		288304A72081E825006CD09A /* 8.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2883049F2081E825006CD09A /* 8.gif */; };
 		28A035842067C6260069BDB2 /* FoodMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A035832067C6260069BDB2 /* FoodMainViewController.swift */; };
 		28A035862067C9C60069BDB2 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A035852067C9C60069BDB2 /* Recipe.swift */; };
 		28A0358B20681E130069BDB2 /* RecipeComponentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A0358920681E130069BDB2 /* RecipeComponentCell.swift */; };
@@ -68,9 +71,6 @@
 		28D5B503205DAFC700DE7BF7 /* FoodType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D5B502205DAFC700DE7BF7 /* FoodType.swift */; };
 		28D5B505205DB16700DE7BF7 /* mainFoodImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28D5B504205DB16700DE7BF7 /* mainFoodImage.jpg */; };
 		28D5B507205DB21700DE7BF7 /* FoodTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D5B506205DB21700DE7BF7 /* FoodTypeCell.swift */; };
-		28D5B509205DC12000DE7BF7 /* soupeImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28D5B508205DC12000DE7BF7 /* soupeImage.jpg */; };
-		28D5B50B205DC18200DE7BF7 /* salatImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28D5B50A205DC18200DE7BF7 /* salatImage.jpg */; };
-		28D5B50D205DC1BC00DE7BF7 /* desertImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28D5B50C205DC1BC00DE7BF7 /* desertImage.jpg */; };
 		87508C952037BD66697C7166 /* Pods_Kitchen_recipes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED30C019FF272203320EA8BB /* Pods_Kitchen_recipes.framework */; };
 /* End PBXBuildFile section */
 
@@ -95,13 +95,6 @@
 		062843B6EEA3950549D5E483 /* Pods-Kitchen recipes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kitchen recipes.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kitchen recipes/Pods-Kitchen recipes.release.xcconfig"; sourceTree = "<group>"; };
 		280584792066B15E00BBEF10 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		2819DFBF206685750055C635 /* FoodTypeInit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTypeInit.swift; sourceTree = "<group>"; };
-		2819DFC120668F430055C635 /* golabki.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = golabki.jpg; path = ../../../../../Downloads/golabki.jpg; sourceTree = "<group>"; };
-		2819DFC320668F8C0055C635 /* schabowy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = schabowy.jpg; path = ../../../../../Downloads/schabowy.jpg; sourceTree = "<group>"; };
-		2819DFC520668FAD0055C635 /* bigos.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bigos.jpg; path = ../../../../../Downloads/bigos.jpg; sourceTree = "<group>"; };
-		2819DFC72066922C0055C635 /* barszcz_czerwony.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = barszcz_czerwony.jpg; path = ../../../../../Downloads/barszcz_czerwony.jpg; sourceTree = "<group>"; };
-		2819DFC92066924A0055C635 /* zurek_z_jajkiem.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = zurek_z_jajkiem.jpg; path = ../../../../../Downloads/zurek_z_jajkiem.jpg; sourceTree = "<group>"; };
-		2819DFCB2066927C0055C635 /* rosol.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = rosol.jpg; path = ../../../../../Downloads/rosol.jpg; sourceTree = "<group>"; };
-		28336FFF205E5299003664C0 /* snackImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = snackImage.jpg; path = ../../../../../Downloads/snackImage.jpg; sourceTree = "<group>"; };
 		28337003205E5595003664C0 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		28337005205E5DA4003664C0 /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
 		28622226205D190300A9C2B0 /* Kitchen recipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kitchen recipes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,14 +113,6 @@
 		2865C835206AD3A300BA7FEA /* ezgif-4-ed2350780b.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "ezgif-4-ed2350780b.gif"; path = "../../../../../Downloads/ezgif-4-ed2350780b.gif"; sourceTree = "<group>"; };
 		2865C837206BF96900BA7FEA /* EmptyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyCell.swift; sourceTree = "<group>"; };
 		2865C838206BF96900BA7FEA /* EmptyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyCell.xib; sourceTree = "<group>"; };
-		2865C83C206C0C7900BA7FEA /* 7.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = 7.gif; path = "../../../../../../Documents/Golabki-GIF/7.gif"; sourceTree = "<group>"; };
-		2865C83D206C0C7900BA7FEA /* 1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = 1.gif; path = "../../../../../../Documents/Golabki-GIF/1.gif"; sourceTree = "<group>"; };
-		2865C83E206C0C7900BA7FEA /* 2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = 2.gif; path = "../../../../../../Documents/Golabki-GIF/2.gif"; sourceTree = "<group>"; };
-		2865C83F206C0C7900BA7FEA /* 3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = 3.gif; path = "../../../../../../Documents/Golabki-GIF/3.gif"; sourceTree = "<group>"; };
-		2865C840206C0C7900BA7FEA /* 5.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = 5.gif; path = "../../../../../../Documents/Golabki-GIF/5.gif"; sourceTree = "<group>"; };
-		2865C841206C0C7900BA7FEA /* 6.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = 6.gif; path = "../../../../../../Documents/Golabki-GIF/6.gif"; sourceTree = "<group>"; };
-		2865C842206C0C7900BA7FEA /* 4.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = 4.gif; path = "../../../../../../Documents/Golabki-GIF/4.gif"; sourceTree = "<group>"; };
-		2865C843206C0C7A00BA7FEA /* 8.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = 8.gif; path = "../../../../../../Documents/Golabki-GIF/8.gif"; sourceTree = "<group>"; };
 		287DB49B207903D100DF566D /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		287DB49D2079041B00DF566D /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		287DB49E2079041B00DF566D /* MenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuTableViewCell.xib; sourceTree = "<group>"; };
@@ -144,6 +129,24 @@
 		287DB4B6207A2F4B00DF566D /* RecipeStepsAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeStepsAddViewController.swift; sourceTree = "<group>"; };
 		287DB4B8207A30B000DF566D /* RecipeStepAddCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeStepAddCell.swift; sourceTree = "<group>"; };
 		287DB4B9207A30B000DF566D /* RecipeStepAddCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipeStepAddCell.xib; sourceTree = "<group>"; };
+		288304842081E6A7006CD09A /* soupeImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = soupeImage.jpg; sourceTree = "<group>"; };
+		288304862081E6F2006CD09A /* salatImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = salatImage.jpg; sourceTree = "<group>"; };
+		288304882081E7A0006CD09A /* desertImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = desertImage.jpg; sourceTree = "<group>"; };
+		2883048A2081E7A8006CD09A /* snackImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = snackImage.jpg; sourceTree = "<group>"; };
+		2883048C2081E7DA006CD09A /* golabki.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = golabki.jpg; sourceTree = "<group>"; };
+		2883048E2081E7E2006CD09A /* schabowy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = schabowy.jpg; sourceTree = "<group>"; };
+		288304902081E7E9006CD09A /* bigos.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bigos.jpg; sourceTree = "<group>"; };
+		288304922081E7F2006CD09A /* barszcz_czerwony.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = barszcz_czerwony.jpg; sourceTree = "<group>"; };
+		288304942081E7F8006CD09A /* zurek_z_jajkiem.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = zurek_z_jajkiem.jpg; sourceTree = "<group>"; };
+		288304962081E801006CD09A /* rosol.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rosol.jpg; sourceTree = "<group>"; };
+		288304982081E825006CD09A /* 1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 1.gif; sourceTree = "<group>"; };
+		288304992081E825006CD09A /* 5.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 5.gif; sourceTree = "<group>"; };
+		2883049A2081E825006CD09A /* 6.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 6.gif; sourceTree = "<group>"; };
+		2883049B2081E825006CD09A /* 4.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 4.gif; sourceTree = "<group>"; };
+		2883049C2081E825006CD09A /* 2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 2.gif; sourceTree = "<group>"; };
+		2883049D2081E825006CD09A /* 7.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 7.gif; sourceTree = "<group>"; };
+		2883049E2081E825006CD09A /* 3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 3.gif; sourceTree = "<group>"; };
+		2883049F2081E825006CD09A /* 8.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 8.gif; sourceTree = "<group>"; };
 		28A035832067C6260069BDB2 /* FoodMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodMainViewController.swift; sourceTree = "<group>"; };
 		28A035852067C9C60069BDB2 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		28A0358920681E130069BDB2 /* RecipeComponentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeComponentCell.swift; sourceTree = "<group>"; };
@@ -160,9 +163,6 @@
 		28D5B502205DAFC700DE7BF7 /* FoodType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodType.swift; sourceTree = "<group>"; };
 		28D5B504205DB16700DE7BF7 /* mainFoodImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = mainFoodImage.jpg; path = ../../../../../Downloads/mainFoodImage.jpg; sourceTree = "<group>"; };
 		28D5B506205DB21700DE7BF7 /* FoodTypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTypeCell.swift; sourceTree = "<group>"; };
-		28D5B508205DC12000DE7BF7 /* soupeImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = soupeImage.jpg; path = ../../../../../Downloads/soupeImage.jpg; sourceTree = "<group>"; };
-		28D5B50A205DC18200DE7BF7 /* salatImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = salatImage.jpg; path = ../../../../../Downloads/salatImage.jpg; sourceTree = "<group>"; };
-		28D5B50C205DC1BC00DE7BF7 /* desertImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = desertImage.jpg; path = ../../../../../Downloads/desertImage.jpg; sourceTree = "<group>"; };
 		AA21F2E30D6747B5AA879CC6 /* Pods-Kitchen recipes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kitchen recipes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kitchen recipes/Pods-Kitchen recipes.debug.xcconfig"; sourceTree = "<group>"; };
 		ED30C019FF272203320EA8BB /* Pods_Kitchen_recipes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kitchen_recipes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -281,14 +281,14 @@
 		2865C83B206C022100BA7FEA /* Golabki */ = {
 			isa = PBXGroup;
 			children = (
-				2865C83D206C0C7900BA7FEA /* 1.gif */,
-				2865C83E206C0C7900BA7FEA /* 2.gif */,
-				2865C83F206C0C7900BA7FEA /* 3.gif */,
-				2865C842206C0C7900BA7FEA /* 4.gif */,
-				2865C840206C0C7900BA7FEA /* 5.gif */,
-				2865C841206C0C7900BA7FEA /* 6.gif */,
-				2865C83C206C0C7900BA7FEA /* 7.gif */,
-				2865C843206C0C7A00BA7FEA /* 8.gif */,
+				288304982081E825006CD09A /* 1.gif */,
+				2883049C2081E825006CD09A /* 2.gif */,
+				2883049E2081E825006CD09A /* 3.gif */,
+				2883049B2081E825006CD09A /* 4.gif */,
+				288304992081E825006CD09A /* 5.gif */,
+				2883049A2081E825006CD09A /* 6.gif */,
+				2883049D2081E825006CD09A /* 7.gif */,
+				2883049F2081E825006CD09A /* 8.gif */,
 			);
 			path = Golabki;
 			sourceTree = "<group>";
@@ -323,17 +323,17 @@
 			children = (
 				2865C83B206C022100BA7FEA /* Golabki */,
 				28D5B504205DB16700DE7BF7 /* mainFoodImage.jpg */,
-				28D5B508205DC12000DE7BF7 /* soupeImage.jpg */,
-				28D5B50A205DC18200DE7BF7 /* salatImage.jpg */,
-				28D5B50C205DC1BC00DE7BF7 /* desertImage.jpg */,
-				28336FFF205E5299003664C0 /* snackImage.jpg */,
-				2819DFC120668F430055C635 /* golabki.jpg */,
-				2819DFC320668F8C0055C635 /* schabowy.jpg */,
-				2819DFC520668FAD0055C635 /* bigos.jpg */,
-				2819DFC72066922C0055C635 /* barszcz_czerwony.jpg */,
-				2819DFC92066924A0055C635 /* zurek_z_jajkiem.jpg */,
+				288304842081E6A7006CD09A /* soupeImage.jpg */,
+				288304862081E6F2006CD09A /* salatImage.jpg */,
+				288304882081E7A0006CD09A /* desertImage.jpg */,
+				2883048A2081E7A8006CD09A /* snackImage.jpg */,
+				2883048C2081E7DA006CD09A /* golabki.jpg */,
+				2883048E2081E7E2006CD09A /* schabowy.jpg */,
+				288304902081E7E9006CD09A /* bigos.jpg */,
+				288304922081E7F2006CD09A /* barszcz_czerwony.jpg */,
 				2865C835206AD3A300BA7FEA /* ezgif-4-ed2350780b.gif */,
-				2819DFCB2066927C0055C635 /* rosol.jpg */,
+				288304942081E7F8006CD09A /* zurek_z_jajkiem.jpg */,
+				288304962081E801006CD09A /* rosol.jpg */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -486,38 +486,38 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2865C845206C0C7A00BA7FEA /* 1.gif in Resources */,
 				2805847A2066B15E00BBEF10 /* Podfile in Resources */,
+				288304A72081E825006CD09A /* 8.gif in Resources */,
+				288304932081E7F2006CD09A /* barszcz_czerwony.jpg in Resources */,
 				2865C83A206BF96900BA7FEA /* EmptyCell.xib in Resources */,
 				287DB4BB207A30B000DF566D /* RecipeStepAddCell.xib in Resources */,
 				2865C836206AD3A300BA7FEA /* ezgif-4-ed2350780b.gif in Resources */,
-				28337000205E5299003664C0 /* snackImage.jpg in Resources */,
-				2865C849206C0C7A00BA7FEA /* 6.gif in Resources */,
+				288304952081E7F8006CD09A /* zurek_z_jajkiem.jpg in Resources */,
+				288304A52081E825006CD09A /* 7.gif in Resources */,
+				288304972081E801006CD09A /* rosol.jpg in Resources */,
 				28622234205D190300A9C2B0 /* LaunchScreen.storyboard in Resources */,
+				288304892081E7A0006CD09A /* desertImage.jpg in Resources */,
+				288304A22081E825006CD09A /* 6.gif in Resources */,
 				28A0358C20681E130069BDB2 /* RecipeComponentCell.xib in Resources */,
-				2819DFCC2066927C0055C635 /* rosol.jpg in Resources */,
-				2819DFC620668FAD0055C635 /* bigos.jpg in Resources */,
+				288304A12081E825006CD09A /* 5.gif in Resources */,
 				28622231205D190300A9C2B0 /* Assets.xcassets in Resources */,
-				2865C846206C0C7A00BA7FEA /* 2.gif in Resources */,
+				288304A32081E825006CD09A /* 4.gif in Resources */,
+				288304912081E7E9006CD09A /* bigos.jpg in Resources */,
 				28A0359A206AC0B60069BDB2 /* RecipeStepCell.xib in Resources */,
-				2865C847206C0C7A00BA7FEA /* 3.gif in Resources */,
-				2819DFC420668F8C0055C635 /* schabowy.jpg in Resources */,
-				2865C84A206C0C7A00BA7FEA /* 4.gif in Resources */,
+				288304A62081E825006CD09A /* 3.gif in Resources */,
+				288304A02081E825006CD09A /* 1.gif in Resources */,
+				2883048B2081E7A8006CD09A /* snackImage.jpg in Resources */,
 				28D16ADD20726509006301BD /* RecipeTitltleAddCell.xib in Resources */,
+				2883048D2081E7DA006CD09A /* golabki.jpg in Resources */,
 				2862222F205D190300A9C2B0 /* Main.storyboard in Resources */,
 				287DB4A42079FC1F00DF566D /* FoodCell.xib in Resources */,
 				287DB4A02079041B00DF566D /* MenuTableViewCell.xib in Resources */,
+				288304872081E6F2006CD09A /* salatImage.jpg in Resources */,
+				288304A42081E825006CD09A /* 2.gif in Resources */,
 				28D5B505205DB16700DE7BF7 /* mainFoodImage.jpg in Resources */,
 				28A03596206832150069BDB2 /* RecipeMainCell.xib in Resources */,
-				28D5B509205DC12000DE7BF7 /* soupeImage.jpg in Resources */,
-				2865C844206C0C7A00BA7FEA /* 7.gif in Resources */,
-				28D5B50B205DC18200DE7BF7 /* salatImage.jpg in Resources */,
-				2865C848206C0C7A00BA7FEA /* 5.gif in Resources */,
-				28D5B50D205DC1BC00DE7BF7 /* desertImage.jpg in Resources */,
-				2819DFCA2066924A0055C635 /* zurek_z_jajkiem.jpg in Resources */,
-				2865C84B206C0C7A00BA7FEA /* 8.gif in Resources */,
-				2819DFC82066922C0055C635 /* barszcz_czerwony.jpg in Resources */,
-				2819DFC220668F430055C635 /* golabki.jpg in Resources */,
+				2883048F2081E7E2006CD09A /* schabowy.jpg in Resources */,
+				288304852081E6A7006CD09A /* soupeImage.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

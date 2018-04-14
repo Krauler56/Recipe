@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import SwiftGifOrigin
 
-var foodTypeInit =  [FoodType.init(image:#imageLiteral(resourceName: "mainFoodImage"),message: "Glowne dania", kind: FoodKind.mainFood)
+var foodTypeInit =  [FoodType.init(image:#imageLiteral(resourceName: "mainFoodImage.jpg"),message: "Glowne dania", kind: FoodKind.mainFood)
     ,FoodType.init(image: #imageLiteral(resourceName: "soupeImage.jpg"),message: "Zupy", kind: FoodKind.soupe)
     ,FoodType.init(image: #imageLiteral(resourceName: "salatImage.jpg"),message: "Salatki", kind: FoodKind.salat)
     ,FoodType.init(image:#imageLiteral(resourceName: "desertImage.jpg"),message: "Desery", kind: FoodKind.desert)
