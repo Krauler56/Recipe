@@ -12,6 +12,7 @@ import SwiftyGif
 
 class RecipeStepAddCell: UITableViewCell , setAnimateInCell {
  
+    
     weak var delegate: recipeOpenVideoRecordProtocol?
     @IBOutlet var recipeAddStepTextView: UITextView!
     @IBOutlet var recipeGif: UIImageView!
@@ -22,6 +23,8 @@ class RecipeStepAddCell: UITableViewCell , setAnimateInCell {
         
         recipeGif.isUserInteractionEnabled = true
         recipeGif.addGestureRecognizer(tapGestureRecognizer)
+        
+       
         // Initialization code
     }
 
@@ -66,10 +69,10 @@ class RecipeStepAddCell: UITableViewCell , setAnimateInCell {
     
     func loadGifToImageView(with: URL) {
         print("AAAaaaaaAAAAAAAAAAASDSADSADADSSA")
-        if(UrlVideoHandler.regiftImege != nil) {
+        //if(UrlVideoHandler.regiftImege != nil) {
             recipeGif.animate(withGIFURL: with)
             recipeGif.startAnimatingGif()
-        }
+       // }
     }
 }
 

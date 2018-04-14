@@ -37,7 +37,7 @@ class RecipeStepsAddViewController: UIViewController, UITableViewDelegate, UITab
      func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = Bundle.main.loadNibNamed("RecipeStepAddCell", owner: self, options: nil)?.first as! RecipeStepAddCell
         cell.delegate = self;
-
+        deleg = cell
         return cell
     }
     
