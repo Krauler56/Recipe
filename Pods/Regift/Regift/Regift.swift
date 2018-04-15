@@ -273,6 +273,22 @@ public struct Regift {
 
         - returns: The path to the created GIF, or `nil` if there was an error creating it.
     */
+    
+    public func randomString(length: Int) -> String {
+        
+        let letters : NSString = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+        let len = UInt32(letters.length)
+        
+        var randomString = ""
+        
+        for _ in 0 ..< length {
+            let rand = arc4random_uniform(len)
+            var nextChar = letters.character(at: Int(rand))
+            randomString += NSString(characters: &nextChar, length: 1) as String
+        }
+        
+        return randomString
+    }
     public func createGIFForTimePoints(_ timePoints: [TimePoint], fileProperties: [String: AnyObject], frameProperties: [String: AnyObject], frameCount: Int, size: CGSize? = nil) throws -> URL {
         // Ensure the source media is a valid file.
         guard asset.tracks(withMediaCharacteristic: .visual).count > 0 else {
@@ -283,7 +299,7 @@ public struct Regift {
         if self.destinationFileURL != nil {
             fileURL = self.destinationFileURL
         } else {
-            let temporaryFile = (NSTemporaryDirectory() as NSString).appendingPathComponent(Constants.FileName)
+            let temporaryFile = (NSTemporaryDirectory() as NSString).appendingPathComponent(randomString(length: 10)+".gif")//Constants.FileName)
             fileURL = URL(fileURLWithPath: temporaryFile)
         }
         

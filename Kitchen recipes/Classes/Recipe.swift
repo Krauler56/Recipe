@@ -22,7 +22,7 @@ struct Recipe {
 }
 
 struct Step {
-    var image: String?
+    var image: URL?
     var message: String?
     var number: Int?
 }
@@ -44,14 +44,14 @@ var products: [Product] = [Product.init(message: "Kapusta",measure: "glowka"),
 var imgView: UIImageView = UIImageView()
 
 var recipes: [Recipe] = [Recipe.init(image: #imageLiteral(resourceName: "golabki.jpg"),message: "Golabki piekne",rating: 4,numberOfRating: 10,numberOfPortions: 3 ,steps:
-    [(Step.init(image: "1",message: "Nacieramy marchew oraz kroimy cebulę",number: 1))
-    ,(Step.init(image: "2",message: "Rozdrobniony łuk i marchew dodajemy do talerza z miełonym mięsem wieprzowym",number: 2))
-    ,(Step.init(image: "3",message: "Oczyszczoną oraz umytą wcześniej kapustę kroimy do malutkich kawałeczków i dodajemy do talerza",number: 3))
-    ,(Step.init(image: "4",message: "Dodajemy przygotowany ryż, pieprz czarny oraz jajka",number: 4))
-    ,(Step.init(image: "5",message: "Lepimy z otrzymanej mieszanki gołąbki",number: 5))
-    ,(Step.init(image: "6",message: "Na rozgrzaną patelnię z olejem wykładamy gołąbki",number: 6))
-    ,(Step.init(image: "7",message: "Przygotowujemy sos który składa się z sosu pomidorowego i śmietany, oraz zalewamy nim gołąbki w pojemniku",number: 7))
-    ,(Step.init(image: "8",message: "Pieczemy 15 minut w piekarniku przy temperaturze 200 stopni",number: 8))
+    [(Step.init(image: Bundle.main.url(forResource: "1", withExtension: "gif") ,message: "Nacieramy marchew oraz kroimy cebulę",number: 1))
+    ,(Step.init(image: Bundle.main.url(forResource: "2", withExtension: "gif") ,message: "Rozdrobniony łuk i marchew dodajemy do talerza z miełonym mięsem wieprzowym",number: 2))
+    ,(Step.init(image: Bundle.main.url(forResource: "3", withExtension: "gif") ,message: "Oczyszczoną oraz umytą wcześniej kapustę kroimy do malutkich kawałeczków i dodajemy do talerza",number: 3))
+    ,(Step.init(image: Bundle.main.url(forResource: "4", withExtension: "gif") ,message: "Dodajemy przygotowany ryż, pieprz czarny oraz jajka",number: 4))
+    ,(Step.init(image: Bundle.main.url(forResource: "5", withExtension: "gif") ,message: "Lepimy z otrzymanej mieszanki gołąbki",number: 5))
+    ,(Step.init(image: Bundle.main.url(forResource: "6", withExtension: "gif") ,message: "Na rozgrzaną patelnię z olejem wykładamy gołąbki",number: 6))
+    ,(Step.init(image: Bundle.main.url(forResource: "7", withExtension: "gif") ,message: "Przygotowujemy sos który składa się z sosu pomidorowego i śmietany, oraz zalewamy nim gołąbki w pojemniku",number: 7))
+    ,(Step.init(image: Bundle.main.url(forResource: "8", withExtension: "gif") ,message: "Pieczemy 15 minut w piekarniku przy temperaturze 200 stopni",number: 8))
     
     
     

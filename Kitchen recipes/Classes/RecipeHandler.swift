@@ -14,6 +14,14 @@ class RecipeHandler {
     static var actualCheckedRecipe: Recipe?
 }
 
+
+
+class FutureRecipeHandler {
+    static var futureRecipe: Recipe?
+    static var futureSteps: [Step] = [Step]()
+    static var futureProducts: [(Product,Int)] = [(Product,Int)]()
+}
+
 class SlideMenuHandler {
     
     static var slideMenu: MenuViewController?

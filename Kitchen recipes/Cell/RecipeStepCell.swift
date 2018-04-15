@@ -26,6 +26,7 @@ class RecipeStepCell: UITableViewCell {
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
         stepImage.isUserInteractionEnabled = true
         stepImage.addGestureRecognizer(tapGestureRecognizer)
+       // stepImage.stopAnimatingGIF()
         //stepImage.startAnimatingGIF()
         // Initialization code
     }

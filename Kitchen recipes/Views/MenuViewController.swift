@@ -23,6 +23,8 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
         // Do any additional setup after loading the view.
         mnTableView.delegate = self
         mnTableView.dataSource = self
+        
+        // self.hideKeyboard()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

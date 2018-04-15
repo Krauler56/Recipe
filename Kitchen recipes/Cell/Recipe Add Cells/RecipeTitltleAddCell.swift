@@ -12,6 +12,7 @@ class RecipeTitltleAddCell: UITableViewCell, UIPickerViewDataSource, UIPickerVie
     
     weak var delegate: ChangePictureProtocol?
     
+    weak var cellDelegate: MyCustomCellDelegator?
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -77,10 +78,15 @@ class RecipeTitltleAddCell: UITableViewCell, UIPickerViewDataSource, UIPickerVie
                 ,products: [(products[0],1),(products[1],1000),(products[2],1),(products[3],2),(products[4],1),(products[5],200),(products[6],100)],foodType: FoodKind.mainFood)
             recipes.append(recipeToAppend)
         }*/
-        
-        if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "RecipeStepsAddViewController") as? RecipeStepsAddViewController
-        {
-            delegate?.loadNewScreen(controller: vc)
+        if (checkInputData()) {
+            
+        //    if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "RecipeStepsAddViewController") as? RecipeStepsAddViewController
+              //  {
+                    FutureRecipeHandler.futureRecipe = Recipe(image: titleImage.image,message: inputNameOfRecipe.text,rating: 4,numberOfRating: 0,numberOfPortions: selectedValue ,steps:[Step.init()]
+                        ,products: [(products[0],1),(products[1],1000),(products[2],1),(products[3],2),(products[4],1),(products[5],200),(products[6],100)],foodType: FoodKind.mainFood)
+            self.cellDelegate?.callSegueFromCell()
+                   //     delegate?.loadNewScreen(controller: vc)
+                //}
         }
     }
    
@@ -103,4 +109,7 @@ protocol ChangePictureProtocol : NSObjectProtocol {
     func dismissNewScreen(controller: UIViewController) -> Void
 }
 
+protocol MyCustomCellDelegator: NSObjectProtocol {
+    func callSegueFromCell()
+}
 

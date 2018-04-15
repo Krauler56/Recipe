@@ -24,11 +24,26 @@ class RecipeStepsAddViewController: UIViewController, UITableViewDelegate, UITab
         override func viewDidLoad() {
         
         super.viewDidLoad()
-        
+        self.hideKeyboard()
         recipeTableView.delegate = self
         recipeTableView.dataSource = self
-       
+            
+        let rightButtonItem = UIBarButtonItem.init(
+                title: "Save",
+                style: .done,
+                target: self,
+                action: #selector(rightButtonAction(sender:))
+            )
+            
+        self.navigationItem.rightBarButtonItem = rightButtonItem
         
+    }
+    
+    @objc func rightButtonAction(sender: UIBarButtonItem) {
+        FutureRecipeHandler.futureRecipe?.steps = FutureRecipeHandler.futureSteps
+        recipes.append(FutureRecipeHandler.futureRecipe!)
+        self.performSegue(withIdentifier: "segToMainMenu", sender: self)
+       
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -37,12 +52,23 @@ class RecipeStepsAddViewController: UIViewController, UITableViewDelegate, UITab
      func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = Bundle.main.loadNibNamed("RecipeStepAddCell", owner: self, options: nil)?.first as! RecipeStepAddCell
         cell.delegate = self;
+        if (FutureRecipeHandler.futureSteps.count != 0 && indexPath.row < FutureRecipeHandler.futureSteps.count )  {
+            print("IMMMMMM HEREEEEE")
+            cell.recipeGif.animate(withGIFURL: (FutureRecipeHandler.futureSteps[indexPath.row].image)!)
+        cell.recipeGif.startAnimatingGif()
+        }
         deleg = cell
+        cell.recipeGif.startAnimatingGif()
         return cell
     }
     
      func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        if FutureRecipeHandler.futureSteps.count == 0 {
+            return 1
+        }
+        else {
+            return (FutureRecipeHandler.futureSteps.count)+1
+        }
     }
     
      func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -55,7 +81,7 @@ class RecipeStepsAddViewController: UIViewController, UITableViewDelegate, UITab
     
     func loadNewScreen(controller: UIViewController) {
         self.present(controller, animated: true) { () -> Void in
-            print("ISSSSSS WORK")
+          
         };
     }
     func loadRecordScreen(controller: SNVideoRecorderViewController) {
@@ -71,5 +97,6 @@ class RecipeStepsAddViewController: UIViewController, UITableViewDelegate, UITab
         // };
     }
     
+  
     
 }

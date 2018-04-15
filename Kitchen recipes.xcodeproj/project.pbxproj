@@ -64,6 +64,8 @@
 		28A03596206832150069BDB2 /* RecipeMainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28A03594206832150069BDB2 /* RecipeMainCell.xib */; };
 		28A03599206AC0B60069BDB2 /* RecipeStepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A03597206AC0B60069BDB2 /* RecipeStepCell.swift */; };
 		28A0359A206AC0B60069BDB2 /* RecipeStepCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28A03598206AC0B60069BDB2 /* RecipeStepCell.xib */; };
+		28C6598A208353E500D1ACEC /* RecipeProductsAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C65989208353E500D1ACEC /* RecipeProductsAddViewController.swift */; };
+		28C6598C20835F0400D1ACEC /* RecipeProductsAddCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C6598B20835F0400D1ACEC /* RecipeProductsAddCell.swift */; };
 		28D16ADC20726509006301BD /* RecipeTitltleAddCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D16ADA20726509006301BD /* RecipeTitltleAddCell.swift */; };
 		28D16ADD20726509006301BD /* RecipeTitltleAddCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28D16ADB20726509006301BD /* RecipeTitltleAddCell.xib */; };
 		28D16ADF20726F19006301BD /* RecipeTitleAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D16ADE20726F19006301BD /* RecipeTitleAddViewController.swift */; };
@@ -156,6 +158,8 @@
 		28A03594206832150069BDB2 /* RecipeMainCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipeMainCell.xib; sourceTree = "<group>"; };
 		28A03597206AC0B60069BDB2 /* RecipeStepCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeStepCell.swift; sourceTree = "<group>"; };
 		28A03598206AC0B60069BDB2 /* RecipeStepCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipeStepCell.xib; sourceTree = "<group>"; };
+		28C65989208353E500D1ACEC /* RecipeProductsAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeProductsAddViewController.swift; sourceTree = "<group>"; };
+		28C6598B20835F0400D1ACEC /* RecipeProductsAddCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeProductsAddCell.swift; sourceTree = "<group>"; };
 		28D16ADA20726509006301BD /* RecipeTitltleAddCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTitltleAddCell.swift; sourceTree = "<group>"; };
 		28D16ADB20726509006301BD /* RecipeTitltleAddCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipeTitltleAddCell.xib; sourceTree = "<group>"; };
 		28D16ADE20726F19006301BD /* RecipeTitleAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTitleAddViewController.swift; sourceTree = "<group>"; };
@@ -262,6 +266,7 @@
 				28D16ADE20726F19006301BD /* RecipeTitleAddViewController.swift */,
 				287DB4B6207A2F4B00DF566D /* RecipeStepsAddViewController.swift */,
 				287DB49B207903D100DF566D /* MenuViewController.swift */,
+				28C65989208353E500D1ACEC /* RecipeProductsAddViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -314,6 +319,7 @@
 				28D16ADB20726509006301BD /* RecipeTitltleAddCell.xib */,
 				287DB4B8207A30B000DF566D /* RecipeStepAddCell.swift */,
 				287DB4B9207A30B000DF566D /* RecipeStepAddCell.xib */,
+				28C6598B20835F0400D1ACEC /* RecipeProductsAddCell.swift */,
 			);
 			path = "Recipe Add Cells";
 			sourceTree = "<group>";
@@ -619,6 +625,7 @@
 				28A0358B20681E130069BDB2 /* RecipeComponentCell.swift in Sources */,
 				287DB4B3207A2E4F00DF566D /* SNVideoRecorderViewController.swift in Sources */,
 				28D5B503205DAFC700DE7BF7 /* FoodType.swift in Sources */,
+				28C6598C20835F0400D1ACEC /* RecipeProductsAddCell.swift in Sources */,
 				287DB4B2207A2E4F00DF566D /* SNVideoRecorderViewProtocol.swift in Sources */,
 				2819DFC0206685750055C635 /* FoodTypeInit.swift in Sources */,
 				287DB4B4207A2E4F00DF566D /* SNVideoRecorderDelegate.swift in Sources */,
@@ -635,6 +642,7 @@
 				287DB4B7207A2F4C00DF566D /* RecipeStepsAddViewController.swift in Sources */,
 				287DB4BA207A30B000DF566D /* RecipeStepAddCell.swift in Sources */,
 				287DB4A32079FC1F00DF566D /* FoodCell.swift in Sources */,
+				28C6598A208353E500D1ACEC /* RecipeProductsAddViewController.swift in Sources */,
 				28A035862067C9C60069BDB2 /* Recipe.swift in Sources */,
 				2865C839206BF96900BA7FEA /* EmptyCell.swift in Sources */,
 				287DB4AF207A2E4F00DF566D /* SNVideoViewerViewController.swift in Sources */,

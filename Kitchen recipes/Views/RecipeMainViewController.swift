@@ -41,7 +41,9 @@ class RecipeMainViewController: UITableViewController {
         cell.numberOfStepLabel.text = String("\(data.steps![indexPath.row-1].number ?? 0)")
         
         if(data.steps![indexPath.row-1].image != nil) {
-        cell.stepImage.animate(withGIFNamed: data.steps![indexPath.row-1].image!)
+     //   cell.stepImage.animate(withGIFNamed: data.steps![indexPath.row-1].image!)
+            cell.stepImage.animate(withGIFURL: data.steps![indexPath.row-1].image!)
+            cell.stepImage.stopAnimatingGIF()
         }
         cell.stepTextView.text = data.steps![indexPath.row-1].message
         cell.stepImage.stopAnimatingGIF()

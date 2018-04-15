@@ -26,6 +26,7 @@ extension UIViewController
     
     @objc func dismissKeyboard()
     {
+        print("WORRRRKKRKRKR")
         view.endEditing(true)
     }
     
@@ -91,8 +92,12 @@ extension RecipeStepsAddViewController: SNVideoRecorderDelegate {
         let frameCount = 24
         let delayTime  = Float(0.05)
         let loopCount  = 0
-        let regiftImageURL: URL = Regift(sourceFileURL: url, frameCount: frameCount, delayTime: delayTime, loopCount: loopCount).createGif()!
-        deleg?.loadGifToImageView(with: regiftImageURL)
+        var regiftImageURL: URL = Regift(sourceFileURL: url, frameCount: frameCount, delayTime: delayTime, loopCount: loopCount).createGif()!
+        var newUrl:URL = URL.init(string: "Test")!
+        newUrl = regiftImageURL
+            print("Regift image url \(newUrl)")
+        deleg?.loadGifToImageView(with: newUrl)
+        self.recipeTableView.reloadData()
     }
     
     func videoRecorder(withImage image: UIImage) {

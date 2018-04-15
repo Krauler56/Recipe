@@ -9,11 +9,12 @@
 import Foundation
 import UIKit
 
-class RecipeTitleAddTableViewController: UITableViewController ,ChangePictureProtocol{
- 
+class RecipeTitleAddTableViewController: UITableViewController ,ChangePictureProtocol,MyCustomCellDelegator{
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.hideKeyboard()
       
         
@@ -31,7 +32,7 @@ class RecipeTitleAddTableViewController: UITableViewController ,ChangePicturePro
        // cell.countOfRatingPersonLabel.text = "\(data.numberOfRating ?? 0)"
         //cell.countOfPortion.text = "\(data.numberOfPortions ?? 0)"
         cell.delegate = self
-       
+        cell.cellDelegate = self
         return cell
     }
     
@@ -55,6 +56,10 @@ class RecipeTitleAddTableViewController: UITableViewController ,ChangePicturePro
         self.dismiss(animated: false, completion: nil) //{ () -> Void in
             
        // };
+    }
+    
+    func callSegueFromCell() {
+        self.performSegue(withIdentifier: "segTitleToComp", sender: self)
     }
     
     

@@ -23,7 +23,6 @@ class RecipeStepAddCell: UITableViewCell , setAnimateInCell {
         
         recipeGif.isUserInteractionEnabled = true
         recipeGif.addGestureRecognizer(tapGestureRecognizer)
-        
        
         // Initialization code
     }
@@ -40,10 +39,8 @@ class RecipeStepAddCell: UITableViewCell , setAnimateInCell {
     
     @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer)
     {
-        print("ITS WORK")
+        
         let vc = SNVideoRecorderViewController()
-      //  vc.delegate = self as! SNVideoRecorderDelegate
-       // vc.delegate = self as! SNVideoRecorderDelegate
         // flashlight icons
         vc.flashLightOnIcon = UIImage(named: "flash_light_50")
         vc.flashLightOffIcon = UIImage(named: "flash_light_off_50")
@@ -68,11 +65,10 @@ class RecipeStepAddCell: UITableViewCell , setAnimateInCell {
     }
     
     func loadGifToImageView(with: URL) {
-        print("AAAaaaaaAAAAAAAAAAASDSADSADADSSA")
-        //if(UrlVideoHandler.regiftImege != nil) {
-            recipeGif.animate(withGIFURL: with)
-            recipeGif.startAnimatingGif()
-       // }
+        
+           // recipeGif.animate(withGIFURL: with)
+            //recipeGif.startAnimatingGif()
+            FutureRecipeHandler.futureSteps.append(Step.init(image: with ,message: "Nacieramy marchew oraz kroimy cebulę",number: FutureRecipeHandler.futureSteps.count))
     }
 }
 
