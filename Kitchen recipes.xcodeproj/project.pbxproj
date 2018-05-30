@@ -11,6 +11,7 @@
 		2819DFC0206685750055C635 /* FoodTypeInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2819DFBF206685750055C635 /* FoodTypeInit.swift */; };
 		28337004205E5595003664C0 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28337003205E5595003664C0 /* Food.swift */; };
 		28337006205E5DA4003664C0 /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28337005205E5DA4003664C0 /* FoodViewController.swift */; };
+		285542732083E09300BD55BB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 285542722083E09300BD55BB /* GoogleService-Info.plist */; };
 		2862222A205D190300A9C2B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28622229205D190300A9C2B0 /* AppDelegate.swift */; };
 		2862222C205D190300A9C2B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2862222B205D190300A9C2B0 /* ViewController.swift */; };
 		2862222F205D190300A9C2B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2862222D205D190300A9C2B0 /* Main.storyboard */; };
@@ -99,6 +100,7 @@
 		2819DFBF206685750055C635 /* FoodTypeInit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTypeInit.swift; sourceTree = "<group>"; };
 		28337003205E5595003664C0 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		28337005205E5DA4003664C0 /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
+		285542722083E09300BD55BB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		28622226205D190300A9C2B0 /* Kitchen recipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kitchen recipes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		28622229205D190300A9C2B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2862222B205D190300A9C2B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -234,6 +236,7 @@
 				28622232205D190300A9C2B0 /* LaunchScreen.storyboard */,
 				28622235205D190300A9C2B0 /* Info.plist */,
 				28D16AE02072BC79006301BD /* Extensions.swift */,
+				285542722083E09300BD55BB /* GoogleService-Info.plist */,
 			);
 			path = "Kitchen recipes";
 			sourceTree = "<group>";
@@ -500,6 +503,7 @@
 				2865C836206AD3A300BA7FEA /* ezgif-4-ed2350780b.gif in Resources */,
 				288304952081E7F8006CD09A /* zurek_z_jajkiem.jpg in Resources */,
 				288304A52081E825006CD09A /* 7.gif in Resources */,
+				285542732083E09300BD55BB /* GoogleService-Info.plist in Resources */,
 				288304972081E801006CD09A /* rosol.jpg in Resources */,
 				28622234205D190300A9C2B0 /* LaunchScreen.storyboard in Resources */,
 				288304892081E7A0006CD09A /* desertImage.jpg in Resources */,
@@ -568,21 +572,31 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Kitchen recipes/Pods-Kitchen recipes-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
 				"${BUILT_PRODUCTS_DIR}/Gifu/Gifu.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/Regift/Regift.framework",
+				"${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftGifOrigin/SwiftGifOrigin.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyGif/SwiftyGif.framework",
 				"${BUILT_PRODUCTS_DIR}/YALSideMenu/SideMenu.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Gifu.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Regift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCLAlertView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftGifOrigin.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyGif.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

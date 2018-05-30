@@ -9,6 +9,7 @@
 import UIKit
 import Regift
 import SwiftyGif
+import SCLAlertView
 
 class RecipeStepAddCell: UITableViewCell , setAnimateInCell {
  
@@ -39,7 +40,10 @@ class RecipeStepAddCell: UITableViewCell , setAnimateInCell {
     
     @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer)
     {
-        
+        if(recipeAddStepTextView.text == "") {
+         SCLAlertView().showInfo("Important info", subTitle: "Dodaj opis")
+        }
+        else {
         let vc = SNVideoRecorderViewController()
         // flashlight icons
         vc.flashLightOnIcon = UIImage(named: "flash_light_50")
@@ -62,13 +66,14 @@ class RecipeStepAddCell: UITableViewCell , setAnimateInCell {
         vc.initCameraPosition = .back
         
        delegate?.loadRecordScreen(controller: vc)
+        }
     }
     
     func loadGifToImageView(with: URL) {
         
            // recipeGif.animate(withGIFURL: with)
             //recipeGif.startAnimatingGif()
-            FutureRecipeHandler.futureSteps.append(Step.init(image: with ,message: "Nacieramy marchew oraz kroimy cebulę",number: FutureRecipeHandler.futureSteps.count))
+            FutureRecipeHandler.futureSteps.append(Step.init(image: with ,message: recipeAddStepTextView.text,number: FutureRecipeHandler.futureSteps.count))
     }
 }
 

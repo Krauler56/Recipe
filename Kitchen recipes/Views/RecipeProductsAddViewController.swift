@@ -44,6 +44,7 @@ class RecipeProductsAddViewControlller: UIViewController, UITextFieldDelegate, U
     @IBAction func nextStepTap(_ sender: Any) {
         FutureRecipeHandler.futureRecipe?.products = FutureRecipeHandler.futureProducts
         self.performSegue(withIdentifier: "segTittleToVideo", sender: self)
+       // FutureRecipeHandler.setNull()
     }
     func insertNewVideoTitle() {
         

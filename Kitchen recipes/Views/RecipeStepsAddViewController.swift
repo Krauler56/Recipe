@@ -36,6 +36,9 @@ class RecipeStepsAddViewController: UIViewController, UITableViewDelegate, UITab
             )
             
         self.navigationItem.rightBarButtonItem = rightButtonItem
+            
+            NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+            NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
         
     }
     
@@ -55,6 +58,7 @@ class RecipeStepsAddViewController: UIViewController, UITableViewDelegate, UITab
         if (FutureRecipeHandler.futureSteps.count != 0 && indexPath.row < FutureRecipeHandler.futureSteps.count )  {
             print("IMMMMMM HEREEEEE")
             cell.recipeGif.animate(withGIFURL: (FutureRecipeHandler.futureSteps[indexPath.row].image)!)
+            cell.recipeAddStepTextView.text = FutureRecipeHandler.futureSteps[indexPath.row].message
         cell.recipeGif.startAnimatingGif()
         }
         deleg = cell
@@ -95,6 +99,22 @@ class RecipeStepsAddViewController: UIViewController, UITableViewDelegate, UITab
         self.dismiss(animated: false, completion: nil) //{ () -> Void in
         
         // };
+    }
+    
+    @objc func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y == 0{
+                self.view.frame.origin.y -= keyboardSize.height
+            }
+        }
+    }
+    
+    @objc func keyboardWillHide(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y != 0{
+                self.view.frame.origin.y += keyboardSize.height
+            }
+        }
     }
     
   

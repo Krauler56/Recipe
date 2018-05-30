@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import Gifu
+import ObjectMapper
 
 struct Recipe {
     var image: UIImage?
@@ -19,6 +20,11 @@ struct Recipe {
     var steps: [Step]?
     var products: [(Product,Int)]?
     var foodType: FoodKind?
+    
+    func toJSON() -> Dictionary<String, String> {
+        
+        return ["message" : message!, "rating": String(format:"%f", rating!), "numberOfRating": numberOfRating.map(String.init) ?? "", "numberOfPortions": numberOfPortions.map(String.init) ?? ""]
+    }
 }
 
 struct Step {

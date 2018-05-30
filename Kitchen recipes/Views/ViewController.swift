@@ -33,6 +33,16 @@ class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSou
         self.tableView.rowHeight = UITableViewAutomaticDimension
         
         self.setSlideView()
+        var parameters  = ["image" : "test","message" : "test","rating": "test", "numberOfRating": "test","numberOfPortions": "test"]
+        var test: String = "Test"
+        DBHandler.dbReference.child("Step").childByAutoId().child("Name").setValue(parameters)
+    
+        
+        //DBHandler.dbReference.child("Step").childByAutoId().child("Number").setValue("1")
+     //   DBHandler.dbReference.child("Recipe").childByAutoId().child("Step").setNilValueForKey("1")
+       // DBHandler.dbReference.child("name").childByAutoId().setValue("test1")
+       // DBHandler.dbReference.child("name").childByAutoId().setValue("test2")
+
         //self.hideKeyboard()
         
         /*menuVC = self.storyboard?.instantiateViewController(withIdentifier: "MenuVC") as! MenuViewController

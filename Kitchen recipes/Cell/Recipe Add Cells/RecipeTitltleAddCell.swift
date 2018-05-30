@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SCLAlertView
 
 class RecipeTitltleAddCell: UITableViewCell, UIPickerViewDataSource, UIPickerViewDelegate , UIImagePickerControllerDelegate, UINavigationControllerDelegate{
     
@@ -69,24 +70,18 @@ class RecipeTitltleAddCell: UITableViewCell, UIPickerViewDataSource, UIPickerVie
     
     func checkInputData() -> Bool
     {
-        return (inputNameOfRecipe.text?.isEmpty)! ? false : true
+        return (inputNameOfRecipe.text?.isEmpty)! || titleImage.image==nil ? false : true
         
     }
     @IBAction func addRecipeButton(_ sender: Any) {
-       /* if (checkInputData()) {
-            var recipeToAppend = Recipe(image: titleImage.image,message: inputNameOfRecipe.text,rating: 4,numberOfRating: 0,numberOfPortions: selectedValue ,steps:[Step.init()]
-                ,products: [(products[0],1),(products[1],1000),(products[2],1),(products[3],2),(products[4],1),(products[5],200),(products[6],100)],foodType: FoodKind.mainFood)
-            recipes.append(recipeToAppend)
-        }*/
-        if (checkInputData()) {
-            
-        //    if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "RecipeStepsAddViewController") as? RecipeStepsAddViewController
-              //  {
+      if (checkInputData()) {
                     FutureRecipeHandler.futureRecipe = Recipe(image: titleImage.image,message: inputNameOfRecipe.text,rating: 4,numberOfRating: 0,numberOfPortions: selectedValue ,steps:[Step.init()]
                         ,products: [(products[0],1),(products[1],1000),(products[2],1),(products[3],2),(products[4],1),(products[5],200),(products[6],100)],foodType: FoodKind.mainFood)
             self.cellDelegate?.callSegueFromCell()
-                   //     delegate?.loadNewScreen(controller: vc)
-                //}
+        
+        }
+      else {
+        SCLAlertView().showInfo("Info", subTitle: "Zrób zdjęcie przepisu oraz dodaj nazwę")
         }
     }
    
