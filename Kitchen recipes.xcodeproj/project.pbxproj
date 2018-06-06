@@ -28,13 +28,6 @@
 		287DB4A32079FC1F00DF566D /* FoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287DB4A12079FC1F00DF566D /* FoodCell.swift */; };
 		287DB4A42079FC1F00DF566D /* FoodCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 287DB4A22079FC1F00DF566D /* FoodCell.xib */; };
 		287DB4A6207A003E00DF566D /* RecipeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287DB4A5207A003E00DF566D /* RecipeHandler.swift */; };
-		287DB4AF207A2E4F00DF566D /* SNVideoViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287DB4A8207A2E4E00DF566D /* SNVideoViewerViewController.swift */; };
-		287DB4B0207A2E4F00DF566D /* SNImageViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287DB4A9207A2E4E00DF566D /* SNImageViewerViewController.swift */; };
-		287DB4B1207A2E4F00DF566D /* SNRecordingCountDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287DB4AA207A2E4E00DF566D /* SNRecordingCountDown.swift */; };
-		287DB4B2207A2E4F00DF566D /* SNVideoRecorderViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287DB4AB207A2E4E00DF566D /* SNVideoRecorderViewProtocol.swift */; };
-		287DB4B3207A2E4F00DF566D /* SNVideoRecorderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287DB4AC207A2E4F00DF566D /* SNVideoRecorderViewController.swift */; };
-		287DB4B4207A2E4F00DF566D /* SNVideoRecorderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287DB4AD207A2E4F00DF566D /* SNVideoRecorderDelegate.swift */; };
-		287DB4B5207A2E4F00DF566D /* SNRecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287DB4AE207A2E4F00DF566D /* SNRecordButton.swift */; };
 		287DB4B7207A2F4C00DF566D /* RecipeStepsAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287DB4B6207A2F4B00DF566D /* RecipeStepsAddViewController.swift */; };
 		287DB4BA207A30B000DF566D /* RecipeStepAddCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287DB4B8207A30B000DF566D /* RecipeStepAddCell.swift */; };
 		287DB4BB207A30B000DF566D /* RecipeStepAddCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 287DB4B9207A30B000DF566D /* RecipeStepAddCell.xib */; };
@@ -74,6 +67,13 @@
 		28D5B503205DAFC700DE7BF7 /* FoodType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D5B502205DAFC700DE7BF7 /* FoodType.swift */; };
 		28D5B505205DB16700DE7BF7 /* mainFoodImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28D5B504205DB16700DE7BF7 /* mainFoodImage.jpg */; };
 		28D5B507205DB21700DE7BF7 /* FoodTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D5B506205DB21700DE7BF7 /* FoodTypeCell.swift */; };
+		28F6BC4C20C7B6E5000EBA84 /* SNVideoViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F6BC4520C7B6E5000EBA84 /* SNVideoViewerViewController.swift */; };
+		28F6BC4D20C7B6E5000EBA84 /* SNRecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F6BC4620C7B6E5000EBA84 /* SNRecordButton.swift */; };
+		28F6BC4E20C7B6E5000EBA84 /* SNVideoRecorderViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F6BC4720C7B6E5000EBA84 /* SNVideoRecorderViewProtocol.swift */; };
+		28F6BC4F20C7B6E5000EBA84 /* SNVideoRecorderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F6BC4820C7B6E5000EBA84 /* SNVideoRecorderViewController.swift */; };
+		28F6BC5020C7B6E5000EBA84 /* SNRecordingCountDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F6BC4920C7B6E5000EBA84 /* SNRecordingCountDown.swift */; };
+		28F6BC5120C7B6E5000EBA84 /* SNVideoRecorderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F6BC4A20C7B6E5000EBA84 /* SNVideoRecorderDelegate.swift */; };
+		28F6BC5220C7B6E5000EBA84 /* SNImageViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F6BC4B20C7B6E5000EBA84 /* SNImageViewerViewController.swift */; };
 		87508C952037BD66697C7166 /* Pods_Kitchen_recipes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED30C019FF272203320EA8BB /* Pods_Kitchen_recipes.framework */; };
 /* End PBXBuildFile section */
 
@@ -123,13 +123,6 @@
 		287DB4A12079FC1F00DF566D /* FoodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCell.swift; sourceTree = "<group>"; };
 		287DB4A22079FC1F00DF566D /* FoodCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodCell.xib; sourceTree = "<group>"; };
 		287DB4A5207A003E00DF566D /* RecipeHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeHandler.swift; sourceTree = "<group>"; };
-		287DB4A8207A2E4E00DF566D /* SNVideoViewerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SNVideoViewerViewController.swift; path = "../../../../SNVideoRecorder-master/SNVideoRecorder/Classes/SNVideoViewerViewController.swift"; sourceTree = "<group>"; };
-		287DB4A9207A2E4E00DF566D /* SNImageViewerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SNImageViewerViewController.swift; path = "../../../../SNVideoRecorder-master/SNVideoRecorder/Classes/SNImageViewerViewController.swift"; sourceTree = "<group>"; };
-		287DB4AA207A2E4E00DF566D /* SNRecordingCountDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SNRecordingCountDown.swift; path = "../../../../SNVideoRecorder-master/SNVideoRecorder/Classes/SNRecordingCountDown.swift"; sourceTree = "<group>"; };
-		287DB4AB207A2E4E00DF566D /* SNVideoRecorderViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SNVideoRecorderViewProtocol.swift; path = "../../../../SNVideoRecorder-master/SNVideoRecorder/Classes/SNVideoRecorderViewProtocol.swift"; sourceTree = "<group>"; };
-		287DB4AC207A2E4F00DF566D /* SNVideoRecorderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SNVideoRecorderViewController.swift; path = "../../../../SNVideoRecorder-master/SNVideoRecorder/Classes/SNVideoRecorderViewController.swift"; sourceTree = "<group>"; };
-		287DB4AD207A2E4F00DF566D /* SNVideoRecorderDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SNVideoRecorderDelegate.swift; path = "../../../../SNVideoRecorder-master/SNVideoRecorder/Classes/SNVideoRecorderDelegate.swift"; sourceTree = "<group>"; };
-		287DB4AE207A2E4F00DF566D /* SNRecordButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SNRecordButton.swift; path = "../../../../SNVideoRecorder-master/SNVideoRecorder/Classes/SNRecordButton.swift"; sourceTree = "<group>"; };
 		287DB4B6207A2F4B00DF566D /* RecipeStepsAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeStepsAddViewController.swift; sourceTree = "<group>"; };
 		287DB4B8207A30B000DF566D /* RecipeStepAddCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeStepAddCell.swift; sourceTree = "<group>"; };
 		287DB4B9207A30B000DF566D /* RecipeStepAddCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipeStepAddCell.xib; sourceTree = "<group>"; };
@@ -169,6 +162,13 @@
 		28D5B502205DAFC700DE7BF7 /* FoodType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodType.swift; sourceTree = "<group>"; };
 		28D5B504205DB16700DE7BF7 /* mainFoodImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = mainFoodImage.jpg; path = ../../../../../Downloads/mainFoodImage.jpg; sourceTree = "<group>"; };
 		28D5B506205DB21700DE7BF7 /* FoodTypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTypeCell.swift; sourceTree = "<group>"; };
+		28F6BC4520C7B6E5000EBA84 /* SNVideoViewerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNVideoViewerViewController.swift; sourceTree = "<group>"; };
+		28F6BC4620C7B6E5000EBA84 /* SNRecordButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNRecordButton.swift; sourceTree = "<group>"; };
+		28F6BC4720C7B6E5000EBA84 /* SNVideoRecorderViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNVideoRecorderViewProtocol.swift; sourceTree = "<group>"; };
+		28F6BC4820C7B6E5000EBA84 /* SNVideoRecorderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNVideoRecorderViewController.swift; sourceTree = "<group>"; };
+		28F6BC4920C7B6E5000EBA84 /* SNRecordingCountDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNRecordingCountDown.swift; sourceTree = "<group>"; };
+		28F6BC4A20C7B6E5000EBA84 /* SNVideoRecorderDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNVideoRecorderDelegate.swift; sourceTree = "<group>"; };
+		28F6BC4B20C7B6E5000EBA84 /* SNImageViewerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNImageViewerViewController.swift; sourceTree = "<group>"; };
 		AA21F2E30D6747B5AA879CC6 /* Pods-Kitchen recipes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kitchen recipes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kitchen recipes/Pods-Kitchen recipes.debug.xcconfig"; sourceTree = "<group>"; };
 		ED30C019FF272203320EA8BB /* Pods_Kitchen_recipes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kitchen_recipes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -304,13 +304,13 @@
 		287DB4A7207A2E2E00DF566D /* ScnVideoRecorder */ = {
 			isa = PBXGroup;
 			children = (
-				287DB4A9207A2E4E00DF566D /* SNImageViewerViewController.swift */,
-				287DB4AE207A2E4F00DF566D /* SNRecordButton.swift */,
-				287DB4AA207A2E4E00DF566D /* SNRecordingCountDown.swift */,
-				287DB4AD207A2E4F00DF566D /* SNVideoRecorderDelegate.swift */,
-				287DB4AC207A2E4F00DF566D /* SNVideoRecorderViewController.swift */,
-				287DB4AB207A2E4E00DF566D /* SNVideoRecorderViewProtocol.swift */,
-				287DB4A8207A2E4E00DF566D /* SNVideoViewerViewController.swift */,
+				28F6BC4B20C7B6E5000EBA84 /* SNImageViewerViewController.swift */,
+				28F6BC4620C7B6E5000EBA84 /* SNRecordButton.swift */,
+				28F6BC4920C7B6E5000EBA84 /* SNRecordingCountDown.swift */,
+				28F6BC4A20C7B6E5000EBA84 /* SNVideoRecorderDelegate.swift */,
+				28F6BC4820C7B6E5000EBA84 /* SNVideoRecorderViewController.swift */,
+				28F6BC4720C7B6E5000EBA84 /* SNVideoRecorderViewProtocol.swift */,
+				28F6BC4520C7B6E5000EBA84 /* SNVideoViewerViewController.swift */,
 			);
 			path = ScnVideoRecorder;
 			sourceTree = "<group>";
@@ -631,35 +631,35 @@
 				28D16ADF20726F19006301BD /* RecipeTitleAddViewController.swift in Sources */,
 				28D16AE12072BC79006301BD /* Extensions.swift in Sources */,
 				28A035842067C6260069BDB2 /* FoodMainViewController.swift in Sources */,
+				28F6BC4C20C7B6E5000EBA84 /* SNVideoViewerViewController.swift in Sources */,
 				28A03599206AC0B60069BDB2 /* RecipeStepCell.swift in Sources */,
-				287DB4B1207A2E4F00DF566D /* SNRecordingCountDown.swift in Sources */,
-				287DB4B0207A2E4F00DF566D /* SNImageViewerViewController.swift in Sources */,
 				2862222C205D190300A9C2B0 /* ViewController.swift in Sources */,
 				28337006205E5DA4003664C0 /* FoodViewController.swift in Sources */,
 				28A0358B20681E130069BDB2 /* RecipeComponentCell.swift in Sources */,
-				287DB4B3207A2E4F00DF566D /* SNVideoRecorderViewController.swift in Sources */,
 				28D5B503205DAFC700DE7BF7 /* FoodType.swift in Sources */,
 				28C6598C20835F0400D1ACEC /* RecipeProductsAddCell.swift in Sources */,
-				287DB4B2207A2E4F00DF566D /* SNVideoRecorderViewProtocol.swift in Sources */,
 				2819DFC0206685750055C635 /* FoodTypeInit.swift in Sources */,
-				287DB4B4207A2E4F00DF566D /* SNVideoRecorderDelegate.swift in Sources */,
+				28F6BC4D20C7B6E5000EBA84 /* SNRecordButton.swift in Sources */,
 				28D16ADC20726509006301BD /* RecipeTitltleAddCell.swift in Sources */,
-				287DB4B5207A2E4F00DF566D /* SNRecordButton.swift in Sources */,
 				28A03592206828E60069BDB2 /* RecipeMainViewController.swift in Sources */,
 				2862222A205D190300A9C2B0 /* AppDelegate.swift in Sources */,
 				28D5B507205DB21700DE7BF7 /* FoodTypeCell.swift in Sources */,
 				287DB49F2079041B00DF566D /* MenuTableViewCell.swift in Sources */,
+				28F6BC4F20C7B6E5000EBA84 /* SNVideoRecorderViewController.swift in Sources */,
 				287DB49C207903D100DF566D /* MenuViewController.swift in Sources */,
+				28F6BC5220C7B6E5000EBA84 /* SNImageViewerViewController.swift in Sources */,
 				28A03595206832150069BDB2 /* RecipeMainCell.swift in Sources */,
 				28337004205E5595003664C0 /* Food.swift in Sources */,
 				287DB4A6207A003E00DF566D /* RecipeHandler.swift in Sources */,
+				28F6BC5020C7B6E5000EBA84 /* SNRecordingCountDown.swift in Sources */,
 				287DB4B7207A2F4C00DF566D /* RecipeStepsAddViewController.swift in Sources */,
 				287DB4BA207A30B000DF566D /* RecipeStepAddCell.swift in Sources */,
 				287DB4A32079FC1F00DF566D /* FoodCell.swift in Sources */,
 				28C6598A208353E500D1ACEC /* RecipeProductsAddViewController.swift in Sources */,
+				28F6BC4E20C7B6E5000EBA84 /* SNVideoRecorderViewProtocol.swift in Sources */,
+				28F6BC5120C7B6E5000EBA84 /* SNVideoRecorderDelegate.swift in Sources */,
 				28A035862067C9C60069BDB2 /* Recipe.swift in Sources */,
 				2865C839206BF96900BA7FEA /* EmptyCell.swift in Sources */,
-				287DB4AF207A2E4F00DF566D /* SNVideoViewerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
